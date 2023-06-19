@@ -1,0 +1,591 @@
+
+.cata-timeline {
+    position: relative;
+    padding: 5em 0;
+    margin-bottom: 8px
+}
+
+.cata-timeline-top,.cata-timeline-bottom {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 20;
+    margin-left: -7px
+}
+
+.cata-timeline-bottom {
+    bottom: 0;
+    top: auto
+}
+
+.cata-timeline-top:before,.cata-timeline-bottom:before {
+    content: ' ';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    z-index: 20;
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 10px;
+    border: 4px solid #eee;
+    background-color: #eee;
+}
+
+.cata-timeline .cata-content-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 4px;
+    background: #fff7f7
+}
+
+.cata-timeline .cata-item {
+    position: relative;
+    clear: both;
+    width: 50%
+}
+
+.cata-timeline .cata-item,.cata-timeline .cata-item *,.cata-timeline .cata-item .cata-timeline-content::before,.cata-timeline .cata-item .cata-timeline-content::after {
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease
+}
+
+.cata-timeline .cata-item:not(:first-child) {
+    margin-top: 70px
+}
+
+.cata-timeline .cata-item .cata-timeline-content {
+    position: relative;
+    width: 80%;
+    padding: 40px;
+    text-align: center;
+    /* background: #FFF; */
+    border: 2px solid #f7f7f7
+}
+
+.cata-timeline .cata-item:nth-child(even) .cata-timeline-content {
+    margin-left: 20%
+}
+
+.cata-timeline .cata-item .cata-timeline-content:hover {
+    background: #fff7f7;
+    border-color: #fff7f7
+}
+
+.cata-timeline .cata-item .cata-timeline-content > p,.cata-timeline .cata-item .cata-timeline-content img {
+    margin: 0;
+    width: 100%
+}
+
+.cata-timeline .cata-item:nth-child(odd) {
+    float: left
+}
+
+.cata-item:nth-child(odd) .cata-timeline-content::before,.cata-item:nth-child(odd) .cata-timeline-content::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -4px;
+    border: 15px solid transparent;
+    border-color: transparent;
+    border-left-color: #f7f7f7
+}
+
+.cata-item:nth-child(odd) .cata-timeline-content::after {
+    margin-top: -2px;
+    margin-left: -1px;
+    border: 13px solid transparent;
+    border-left-color: #FFF
+}
+
+.cata-item:nth-child(odd) .cata-timeline-content:hover:after {
+    border-left-color: #fff7f7
+}
+
+.cata-timeline .cata-item:nth-child(even) {
+    float: right
+}
+
+.cata-item:nth-child(even) .cata-timeline-content::before,.cata-item:nth-child(even) .cata-timeline-content::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    left: -30px;
+    margin-top: -4px;
+    border: 15px solid transparent;
+    border-color: transparent;
+    border-right-color: #f7f7f7
+}
+
+.cata-item:nth-child(even) .cata-timeline-content::after {
+    margin-top: -2px;
+    margin-right: -1px;
+    border: 13px solid transparent;
+    border-right-color: #FFF
+}
+
+.cata-item:nth-child(even) .cata-timeline-content:hover:after {
+    border-right-color: #fff7f7
+}
+
+.cata-timeline .cata-timeline-content .image-wrap {
+    margin-bottom: 30px
+}
+
+.cata-timeline .cata-timeline-content h4 {
+    margin-bottom: -10px;
+    text-transform: inherit;
+    font-size: 40px;
+    line-height: 50px
+}
+
+.cata-timeline .cata-timeline-content .cata-btn-link {
+    font-size: 12px
+}
+
+.cata-timeline .cata-timeline-content .cata-date {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 13px
+}
+
+.cata-timeline .cata-item:nth-child(even) .cata-timeline-content .cata-date {
+    text-align: right;
+    left: -140%
+}
+
+.cata-timeline .cata-timeline-icon {
+    position: absolute;
+    top: 72px;
+    right: -35px;
+    width: 70px;
+    height: 70px;
+    margin-left: -33px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 74px;
+    border-radius: 50%;
+    color: #8f4e3e;
+    background: #f3f3f3
+}
+
+.cata-timeline .cata-item:nth-child(even) .cata-timeline-icon {
+    right: auto;
+    left: 0
+}
+
+.cata-timeline .cata-item:hover .cata-timeline-icon span {
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg)
+}
+
+.cata-timeline .cata-audio-mp3,.cata-timeline .cata-audiomp3.has-thumb .cata-audio-mp3 {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 30;
+    width: 70%!important;
+    height: 30px
+}
+
+.cata-timeline .cata-video-popup-style .cata-bg-image {
+    padding: 60px 30px
+}
+
+.cata-timeline.cata-style1 .cata-timeline-content .cata-date {
+    position: absolute;
+    left: 140%;
+    top: 50%;
+    margin-top: -10px;
+    margin-bottom: 0
+}
+
+.cata-timeline.cata-style1 .cata-item:nth-child(even) .cata-timeline-content .cata-date {
+    left: -140%;
+    text-align: right
+}
+
+.cata-timeline.cata-style1 .cata-timeline-icon {
+    top: 50%;
+    margin-top: -30px
+}
+
+.cata-timeline.cata-style1 .cata-item:not(:first-child) {
+    margin-top: -80px
+}
+
+.cata-timeline.cata-style2 .cata-item .cata-timeline-content::before,.cata-timeline.cata-style2 .cata-item .cata-timeline-content::after {
+    top: 90px;
+    margin-top: -4px
+}
+
+.cata-timeline.cata-style2 .cata-item .cata-timeline-content::after {
+    top: 92px
+}
+
+.cata-timeline.cata-style2 .cata-item:not(:first-child) {
+    margin-top: -180px
+}
+
+.cata-timeline.cata-style2 .cata-timeline-content .cata-date {
+    position: relative;
+    left: auto;
+    top: auto;
+    display: block;
+    margin-bottom: 30px;
+    text-align: center
+}
+
+.cata-timeline.cata-style2 .cata-item:nth-child(even) .cata-timeline-content .cata-date {
+    text-align: center;
+    left: auto
+}
+
+.cata-timeline.cata-style3 .cata-item .cata-timeline-content {
+    padding: 0;
+    border: 0
+}
+
+.cata-timeline.cata-style3 .cata-item .cata-timeline-content:hover {
+    background: transparent!important
+}
+
+.cata-timeline.cata-style3 .cata-item .cata-timeline-content::before,.cata-timeline.cata-style3 .cata-item .cata-timeline-content::after {
+    content: none!important
+}
+
+.cata-timeline.cata-style3 .cata-timeline-content .content-wrap {
+    position: absolute;
+    top: 50%;
+    left: 140%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding-left: 40px;
+    text-align: left
+}
+
+.cata-timeline.cata-style3 .cata-item:nth-child(even) .cata-timeline-content .content-wrap {
+    left: -140%;
+    text-align: right;
+    padding-left: 0;
+    padding-right: 40px
+}
+
+.cata-timeline.cata-style3 .cata-item:nth-child(even) .cata-button {
+    text-align: right!important
+}
+
+.cata-timeline.cata-style3 .cata-timeline-content .image-wrap {
+    position: relative;
+    margin-bottom: 0
+}
+
+.cata-timeline.cata-style3 .cata-timeline-icon {
+    top: 50%;
+    margin-top: -35px
+}
+
+body.cata-scheme-main-color.error404 article h1,body.cata-scheme-main-color a:hover,body.cata-scheme-main-color .no-items,body.cata-scheme-main-color .catanis-loader-wraper.cata-style3 .heart i,body.cata-scheme-main-color .catanis-loader-wraper.cata-style3 .heart-reverse i,body.cata-scheme-main-color .catanis-loader-wraper.cata-style1 .loader-heart,body.cata-scheme-main-color .cata-backtotop .fa,body.cata-scheme-main-color .cata-dropcaps.style-simple,body.cata-scheme-main-color .gallery.gallery-size-large a:before,body.cata-scheme-main-color .cata-blog-item .post-quote .top-icon,body.cata-scheme-main-color .cata-blog-item .post-link .top-icon,body.cata-scheme-main-color .cata-blog-item .entry-meta li.meta-seperate:before,body.cata-scheme-main-color .cata-blog-item .entry-meta li a:hover,body.cata-scheme-main-color .cata-blog-item .entry-meta li.meta-love .fa,body.cata-scheme-main-color .cata-blog-item .entry-meta li.meta-comments .fa,body.cata-scheme-main-color .cata-blog-item .entry-meta li.meta-featured-post,body.cata-scheme-main-color .cata-blog-item .item .tags-links a:hover,body.cata-scheme-main-color .cata-blog-item .item .tags-links .fa,body.cata-scheme-main-color .cata-blog-item .cata-blog-item-title .sticky,body.cata-scheme-main-color .cata-related-post .dots-rounded .slick-dots li.slick-active button:before,body.cata-scheme-main-color .cata-related-post .cata-item .entry-meta li.meta-date,body.cata-scheme-main-color .cata-blog-item .cata-blog-item-excerpt a.read-more,body.cata-scheme-main-color .cata-comments-area ol.commentlist li .meta-datetime,body.cata-scheme-main-color .cata-comments-area ol.commentlist li div.reply a,body.cata-scheme-main-color #comments ol.commentlist li.comment p.comment-awaiting-moderation,body.cata-scheme-main-color .single-post article.post .item .entry-content .wrap-entry-content a,body.cata-scheme-main-color .widget_meta ul li:before,body.cata-scheme-main-color .widget-container ul.menu > li.current-menu-item > a,body.cata-scheme-main-color #wp-calendar tbody td >a,body.cata-scheme-main-color .cata-widget-twitter .cata-item:before,body.cata-scheme-main-color .cata-widget-twitter .tweet-content a,body.cata-scheme-main-color .cata-widget-twitter .cata-item .author-datetime a,body.cata-scheme-main-color .cata-widget-recent-comments .cata-item .cata-info > a:hover,body.cata-scheme-main-color .cata-widget-subscriptions .cata-subscribe button.button:hover,body.cata-scheme-main-color .cata-widget-testimonials .cata-item .cata-title-occupation a,body.cata-scheme-main-color .catanis-main-menu > ul > li > a::before,body.cata-scheme-main-color .cata-isotope-filter ul li:after,body.cata-scheme-main-color .cata-isotope-filter ul li:hover a,body.cata-scheme-main-color .cata-isotope-filter ul li.selected a,body.cata-scheme-main-color .cata-portfolio .cata-isotope-item:hover .cata-item-info .cata-cates a:hover,body.cata-scheme-main-color .cata-portfolio .cata-love-counter .cata-love,body.cata-scheme-main-color .cata-portfolio .cata-item-info .cata-cates,body.cata-scheme-main-color .cata-portfolio .cata-item-info .cata-cates a,body.cata-scheme-main-color .cata-project-detail .cata-project-info .project-info a:hover,body.cata-scheme-main-color .cata-timeline-icon,body.cata-scheme-main-color .cata-timeline-content .cata-date,body.cata-scheme-main-color .cata-imagebox:hover .imagebox-wrap h6,body.cata-scheme-main-color .cata-imagebox:hover .imagebox-wrap h6 a,body.cata-scheme-main-color .cata-iconbox:hover .iconbox-wrap h6,body.cata-scheme-main-color .cata-iconbox:hover .iconbox-wrap h6 a,body.cata-scheme-main-color .cata-iconbox .icon,body.cata-scheme-main-color .cata-pricetable .cata-icon,body.cata-scheme-main-color .cata-twitter .cata-item:before,body.cata-scheme-main-color .cata-twitter .tweet-content a,body.cata-scheme-main-color .cata-twitter .cata-item .author-datetime a,body.cata-scheme-main-color .cata-testimonial.cata-style6:not(.cata-color-text-light) .cata-item .cata-info em,body.cata-scheme-main-color .cata-testimonial.cata-style6:not(.cata-color-text-light) .cata-item .cata-info .title,body.cata-scheme-main-color .cata-double-slider .double-slider-nav a:hover,body.cata-scheme-main-color .cata-slick-slider .slick-slider .slick-arrow:hover,body.cata-scheme-main-color .slick-dots li.slick-active button:before,body.cata-scheme-main-color .vc_tta.vc_general .vc_tta-tab>a:hover,body.cata-scheme-main-color .vc_tta.vc_tta-tabs.cata-tabs.cata-style1 .vc_tta-tabs-list .vc_tta-tab .vc_tta-icon,body.cata-scheme-main-color .vc_tta.vc_tta-tabs.cata-tabs.cata-style-icon .vc_tta-tabs-list .vc_tta-tab.vc_active>a,body.cata-scheme-main-color .vc_tta.vc_tta-accordion.cata-accordion.cata-style2 .vc_tta-panel .vc_tta-panel-title>a .vc_tta-icon,body.cata-scheme-main-color .vc_tta.vc_tta-tabs.cata-tabs.cata-style1 .vc_tta-tabs-list .vc_tta-tab.vc_active .vc_tta-title-text,body.cata-scheme-main-color .vc_tta.vc_tta-tabs.cata-tour.cata-style1 .vc_tta-tabs-container .vc_tta-tab.vc_active>a,body.cata-scheme-main-color .vc_tta.vc_tta-tabs.cata-tour.cata-style2 .vc_tta-tabs-container .vc_tta-tab.vc_active, body.cata-scheme-main-color .cata-footer .widget_recent_comments li .comment-author-link,body.cata-scheme-main-color .cata-footer .widget_recent_comments li .comment-author-link a,body.cata-scheme-main-color .cata-footer .widget_tag_cloud .tagcloud a:hover,body.cata-scheme-main-color .cata-footer .widget_recent_entries .post-date,body.cata-scheme-main-color .cata-footer .cata-widget-tag-cloud .tagcloud a:hover,body.cata-scheme-main-color .cata-footer .cata-widget-recent-posts .cata-info-detail > span,body.cata-scheme-main-color .cata-footer .color-light a:hover,body.cata-scheme-main-color .cata-footer .color-light .widget_tag_cloud .tagcloud a:hover,body.cata-scheme-main-color .cata-footer .color-light .cata-widget-tag-cloud .tagcloud a:hover,body.cata-scheme-main-color .cata-footer .color-light .widget_recent_entries a:hover,body.cata-scheme-main-color .cata-footer .color-light .widget_archive li a:hover,body.cata-scheme-main-color .cata-footer .color-light .widget_meta ul li a:hover,body.cata-scheme-main-color .cata-footer .color-light .widget_nav_menu ul.menu > li a:hover,body.cata-scheme-main-color .cata-footer .color-light .widget_nav_menu ul li.current_page_item > a,body.cata-scheme-main-color .cata-footer .color-light .widget_pages ul li a:hover,body.cata-scheme-main-color .cata-footer .color-light .widget_pages ul li.current_page_item > a,body.cata-scheme-main-color .cata-footer .color-light .widget_categories li a:hover,body.cata-scheme-main-color .cata-footer .color-light .widget_categories li.current-cat > a,body.cata-scheme-main-color .cata-footer .color-light .widget_text ul.menu > li a:hover,body.cata-scheme-main-color .cata-footer .color-light .widget_text ul.menu > li.current_page_item > a,body.cata-scheme-main-color .cata-footer .color-light #wp-calendar tfoot td#prev a:hover,body.cata-scheme-main-color .cata-footer .color-light #wp-calendar tfoot td#next a:hover,body.cata-scheme-main-color .cata-footer .color-light .cata-widget-flickr a.cata-see-more:hover,body.cata-scheme-main-color .cata-footer .color-light .cata-widget-instagram a.cata-see-more:hover,body.cata-scheme-main-color .cata-footer .color-light .cata-widget-recent-posts .cata-entry-title a:hover,body.cata-scheme-main-color .cata-footer .color-light .cata-widget-recent-comments .cata-item .cata-info > a:hover,body.cata-scheme-main-color .cata-footer .color-light .cata-widget-twitter .cata-item:hover::before,body.cata-scheme-main-color #mobile-nav .mobile-nav-icon-toggle .mobi-nav-btn, body.cata-scheme-main-color .cata-header .catanis-main-menu > ul > li:hover > a,body.cata-scheme-main-color .cata-header .catanis-main-menu > ul > li:focus > a,body.cata-scheme-main-color .cata-header .catanis-main-menu > ul > li:active > a,body.cata-scheme-main-color .cata-header .catanis-main-menu > ul > li.active > a,body.cata-scheme-main-color .cata-header .catanis-main-menu > ul > li.current-menu-item > a,body.cata-scheme-main-color .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li.active > a,body.cata-scheme-main-color .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li.active > a, body.cata-scheme-main-color .cata-header .catanis-main-menu ul ul li a:hover,body.cata-scheme-main-color .cata-header .catanis-main-menu ul ul .current-menu-item > a,body.cata-scheme-main-color .cata-header .catanis-main-menu ul ul .current-menu-item > a,body.cata-scheme-main-color .cata-header .catanis-main-menu ul ul .current-menu-parent > a,body.cata-scheme-main-color .cata-header .catanis-main-menu ul ul .current-menu-ancestor > a,body.cata-scheme-main-color .cata-header .catanis-main-menu li.mega-menu-item ul li[class^="ti-"]:hover:before,body.cata-scheme-main-color .cata-header .catanis-main-menu li.mega-menu-item ul li[class^="fa-"]:hover:before,body.cata-scheme-main-color .cata-header .catanis-main-menu ul ul li[class^="ti-"].current-menu-item:before,body.cata-scheme-main-color .cata-header .catanis-main-menu ul ul li[class^="fa-"].current-menu-item:before,body.cata-scheme-main-color .cata-header .catanis-main-menu li.mega-menu-item ul ul .current-menu-item > a,body.cata-scheme-main-color .cata-header .catanis-main-menu li.mega-menu-item > ul .container > li > a:hover,body.cata-scheme-main-color .cata-header .catanis-main-menu li.mega-menu-item ul ul li:hover a, body.cata-scheme-main-color .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li:hover > a,body.cata-scheme-main-color .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li:focus > a,body.cata-scheme-main-color .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li:active > a,body.cata-scheme-main-color .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li.current-menu-item >a {
+    color: #70A076
+}
+
+body.cata-scheme-main-color.single-post article.post .meta-tags a:hover,body.cata-scheme-main-color .catanis-loader-wraper.cata-style2 .heart:before,body.cata-scheme-main-color .catanis-loader-wraper.cata-style2 .heart:after,body.cata-scheme-main-color .mobi-nav-menu,body.cata-scheme-main-color button.button:hover,body.cata-scheme-main-color input.button:hover,body.cata-scheme-main-color a.button:hover,body.cata-scheme-main-color #quote-carousel .carousel-control:hover,body.cata-scheme-main-color #quote-carousel .dots-indicators li.active,body.cata-scheme-main-color .tp-bullets.custom .tp-bullet:hover,body.cata-scheme-main-color .tp-bullets.custom .tp-bullet.selected,body.cata-scheme-main-color .cata-dropcaps.style-rounded,body.cata-scheme-main-color .cata-dropcaps.style-circle,body.cata-scheme-main-color .cata-frsvp > a,body.cata-scheme-main-color #wp-calendar tbody td#today,body.cata-scheme-main-color #wp-calendar tbody td:not(.pad):hover,body.cata-scheme-main-color .cata-related-post .dots-line .slick-dots li.slick-active button,body.cata-scheme-main-color .cata-related-post .dots-square .slick-dots li.slick-active button,body.cata-scheme-main-color .cata-related-post .dots-catanis-width .slick-dots li.slick-active button,body.cata-scheme-main-color .cata-related-post .dots-catanis-height .slick-dots li.slick-active button,body.cata-scheme-main-color .cata-post.cata-isotope .cata-blog-item.format-quote .item,body.cata-scheme-main-color .cata-post.cata-isotope .cata-blog-item.format-link .item,body.cata-scheme-main-color .catanis-loader-wraper.cata-style5 .bounce:before,body.cata-scheme-main-color .dots-line .slick-dots li.slick-active button,body.cata-scheme-main-color .dots-square .slick-dots li.slick-active button,body.cata-scheme-main-color .dots-catanis-width .slick-dots li.slick-active button,body.cata-scheme-main-color .dots-catanis-height .slick-dots li.slick-active button,body.cata-scheme-main-color .cata-pagination-nextprev .newer-posts > a:hover,body.cata-scheme-main-color .cata-pagination-nextprev .older-posts >a:hover,body.cata-scheme-main-color .cata-gallery-imgs .cata-overlay .icon-circle,body.cata-scheme-main-color .video-js .vjs-play-control,body.cata-scheme-main-color .video-js .vjs-volume-level,body.cata-scheme-main-color .video-js .vjs-play-progress,body.cata-scheme-main-color .cata-music-toggle-btn,body.cata-scheme-main-color .wp-playlist .mejs-container .mejs-controls,body.cata-scheme-main-color .cata-contact-form.cata-color-light input[type="submit"]:hover,body.cata-scheme-main-color .cata-audio-mp3 .mejs-controls .mejs-time-rail .mejs-time-loaded,body.cata-scheme-main-color .cata-audio-mp3 .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current,body.cata-scheme-main-color .cata-audio-mp3 .mejs-container .mejs-controls .mejs-fullscreen-button,body.cata-scheme-main-color .cata-audio-mp3 .mejs-container .mejs-controls .mejs-playpause-button,body.cata-scheme-main-color .cata-audio-mp3 .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current,body.cata-scheme-main-color .cata-timeline-top:before,body.cata-scheme-main-color .cata-timeline-bottom:before,body.cata-scheme-main-color .cata-iconbox.cata-style3 .icon:hover, body.cata-scheme-main-color .cata-single-image.effect-oval > div figure:after,body.cata-scheme-main-color .cata-image-title.effect-slide-top > div figure figcaption,body.cata-scheme-main-color .cata-team.cata-style1 .cata-team-center-slider .cata-item.slick-center .info,body.cata-scheme-main-color .cata-widget-instagram .cata-insta-items a:before,body.cata-scheme-main-color .cata-widget-flickr .cata-flickr-items a:before,body.cata-scheme-main-color .widget_tag_cloud .tagcloud a:hover,body.cata-scheme-main-color .cata-widget-tag-cloud .tagcloud a:hover,body.cata-scheme-main-color .cata-widget-recent-posts .cata-thumb-none .cata-num,body.cata-scheme-main-color .cata-widget-subscriptions .cata-subscribe.cata-style-background form button.button,body.cata-scheme-main-color .vc_tta.vc_tta-accordion.cata-accordion.cata-style1 .vc_tta-panel .vc_tta-panel-title>a .vc_tta-icon {
+    background-color: #70A076
+}
+
+@media only screen and (min-width: 768px) and (max-width:991px) {
+    .cata-timeline .cata-item:not(:first-child) {
+        margin-top: 100px
+    }
+
+    .cata-timeline .cata-timeline-content .content-wrap .cata-desc br {
+        display: none
+    }
+
+    .cata-timeline .cata-timeline-content h4 {
+        font-size: 30px;
+        line-height: 38px
+    }
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+    .cata-timeline-icon,.cata-timeline-top,.cata-timeline-bottom,.cata-timeline .cata-content-wrapper::before {
+        left: 35px
+    }
+
+    .cata-timeline .cata-item .cata-timeline-content,.cata-timeline .cata-item:nth-child(even) .cata-timeline-content {
+        width: calc(100vw - 180px);
+        margin-left: 110px
+    }
+
+    .cata-timeline .cata-item:nth-child(even) .cata-timeline-content {
+        float: none
+    }
+
+    .cata-timeline .cata-item:nth-child(even) {
+        float: left
+    }
+
+    .cata-timeline .cata-item:nth-child(even) .cata-timeline-icon {
+        right: auto;
+        left: 35px
+    }
+
+    .cata-item:nth-child(odd) .cata-timeline-content::before,.cata-item:nth-child(odd) .cata-timeline-content::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        left: -30px;
+        margin-top: -7px;
+        border: 15px solid transparent;
+        border-color: transparent;
+        border-right-color: #f7f7f7
+    }
+
+    .cata-item:nth-child(odd) .cata-timeline-content::after {
+        margin-top: -4px;
+        border: 12px solid transparent;
+        border-right-color: #FFF;
+        border-left: 0
+    }
+
+    .cata-item:nth-child(odd) .cata-timeline-content:hover:after {
+        border-right-color: #fff7f7;
+        border-left: 0
+    }
+
+    .cata-timeline .cata-audio-mp3,.cata-audiomp3.has-thumb .cata-audio-mp3 {
+        width: 96%!important
+    }
+
+    .cata-timeline.cata-style1 .cata-timeline-content .cata-date {
+        position: relative;
+        left: auto;
+        top: auto;
+        display: block;
+        margin-bottom: 15px;
+        text-align: center
+    }
+
+    .cata-timeline.cata-style1 .cata-item:nth-child(even) .cata-timeline-content .cata-date {
+        left: auto;
+        text-align: center
+    }
+
+    .cata-timeline.cata-style1 .cata-item:not(:first-child),.cata-timeline.cata-style2 .cata-item:not(:first-child) {
+        margin-top: 40px
+    }
+
+    .cata-timeline.cata-style3 .cata-timeline-content .content-wrap {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 100%;
+        margin-top: 25px;
+        padding-left: 0
+    }
+
+    .cata-timeline.cata-style3 .cata-item:nth-child(even) .cata-timeline-content .content-wrap {
+        left: auto;
+        text-align: left;
+        padding-left: 0;
+        padding-right: 0
+    }
+
+    .cata-timeline.cata-style3 .cata-timeline-icon {
+        top: 10%
+    }
+
+    .cata-timeline.cata-style3 .cata-item:nth-child(even) .cata-button,.cata-timeline.cata-style3 .cata-item:nth-child(even) .cata-timeline-content .cata-date {
+        text-align: left!important
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width:519px) {
+    .cata-timeline-top,.cata-timeline-bottom,.cata-timeline .cata-content-wrapper::before {
+        left: 20px
+    }
+
+    .cata-timeline .cata-item .cata-timeline-content,.cata-timeline .cata-item:nth-child(even) .cata-timeline-content {
+        padding: 0;
+        width: calc(100vw - 150px);
+        margin-left: 80px
+    }
+
+    .cata-timeline .cata-timeline-icon {
+        top: 82px;
+        left: 35px;
+        width: 40px;
+        height: 40px;
+        margin-left: -33px;
+        line-height: 45px
+    }
+
+    .cata-timeline.cata-style1 .cata-timeline-icon {
+        margin-top: -15px
+    }
+}
+
+body.cata-scheme-main-color.error404 article h1, body.cata-scheme-main-color a:hover, body.cata-scheme-main-color .no-items, body.cata-scheme-main-color .catanis-loader-wraper.cata-style3 .heart i, body.cata-scheme-main-color .catanis-loader-wraper.cata-style3 .heart-reverse i, body.cata-scheme-main-color .catanis-loader-wraper.cata-style1 .loader-heart, body.cata-scheme-main-color .cata-backtotop .fa, body.cata-scheme-main-color .cata-dropcaps.style-simple, body.cata-scheme-main-color .gallery.gallery-size-large a:before, body.cata-scheme-main-color .cata-blog-item .post-quote .top-icon, body.cata-scheme-main-color .cata-blog-item .post-link .top-icon, body.cata-scheme-main-color .cata-blog-item .entry-meta li.meta-seperate:before, body.cata-scheme-main-color .cata-blog-item .entry-meta li a:hover, body.cata-scheme-main-color .cata-blog-item .entry-meta li.meta-love .fa, body.cata-scheme-main-color .cata-blog-item .entry-meta li.meta-comments .fa, body.cata-scheme-main-color .cata-blog-item .entry-meta li.meta-featured-post, body.cata-scheme-main-color .cata-blog-item .item .tags-links a:hover, body.cata-scheme-main-color .cata-blog-item .item .tags-links .fa, body.cata-scheme-main-color .cata-blog-item .cata-blog-item-title .sticky, body.cata-scheme-main-color .cata-related-post .dots-rounded .slick-dots li.slick-active button:before, body.cata-scheme-main-color .cata-related-post .cata-item .entry-meta li.meta-date, body.cata-scheme-main-color .cata-blog-item .cata-blog-item-excerpt a.read-more, body.cata-scheme-main-color .cata-comments-area ol.commentlist li .meta-datetime, body.cata-scheme-main-color .cata-comments-area ol.commentlist li div.reply a, body.cata-scheme-main-color #comments ol.commentlist li.comment p.comment-awaiting-moderation, body.cata-scheme-main-color .single-post article.post .item .entry-content .wrap-entry-content a, body.cata-scheme-main-color .widget_meta ul li:before, body.cata-scheme-main-color .widget-container ul.menu > li.current-menu-item > a, body.cata-scheme-main-color #wp-calendar tbody td >a, body.cata-scheme-main-color .cata-widget-twitter .cata-item:before, body.cata-scheme-main-color .cata-widget-twitter .tweet-content a, body.cata-scheme-main-color .cata-widget-twitter .cata-item .author-datetime a, body.cata-scheme-main-color .cata-widget-recent-comments .cata-item .cata-info > a:hover, body.cata-scheme-main-color .cata-widget-subscriptions .cata-subscribe button.button:hover, body.cata-scheme-main-color .cata-widget-testimonials .cata-item .cata-title-occupation a, body.cata-scheme-main-color .catanis-main-menu > ul > li > a::before, body.cata-scheme-main-color .cata-isotope-filter ul li:after, body.cata-scheme-main-color .cata-isotope-filter ul li:hover a, body.cata-scheme-main-color .cata-isotope-filter ul li.selected a, body.cata-scheme-main-color .cata-portfolio .cata-isotope-item:hover .cata-item-info .cata-cates a:hover, body.cata-scheme-main-color .cata-portfolio .cata-love-counter .cata-love, body.cata-scheme-main-color .cata-portfolio .cata-item-info .cata-cates, body.cata-scheme-main-color .cata-portfolio .cata-item-info .cata-cates a, body.cata-scheme-main-color .cata-project-detail .cata-project-info .project-info a:hover, body.cata-scheme-main-color .cata-timeline-icon, body.cata-scheme-main-color .cata-timeline-content .cata-date, body.cata-scheme-main-color .cata-imagebox:hover .imagebox-wrap h6, body.cata-scheme-main-color .cata-imagebox:hover .imagebox-wrap h6 a, body.cata-scheme-main-color .cata-iconbox:hover .iconbox-wrap h6, body.cata-scheme-main-color .cata-iconbox:hover .iconbox-wrap h6 a, body.cata-scheme-main-color .cata-iconbox .icon, body.cata-scheme-main-color .cata-pricetable .cata-icon, body.cata-scheme-main-color .cata-twitter .cata-item:before, body.cata-scheme-main-color .cata-twitter .tweet-content a, body.cata-scheme-main-color .cata-twitter .cata-item .author-datetime a, body.cata-scheme-main-color .cata-testimonial.cata-style6:not(.cata-color-text-light) .cata-item .cata-info em, body.cata-scheme-main-color .cata-testimonial.cata-style6:not(.cata-color-text-light) .cata-item .cata-info .title, body.cata-scheme-main-color .cata-double-slider .double-slider-nav a:hover, body.cata-scheme-main-color .cata-slick-slider .slick-slider .slick-arrow:hover, body.cata-scheme-main-color .slick-dots li.slick-active button:before, body.cata-scheme-main-color .vc_tta.vc_general .vc_tta-tab>a:hover, body.cata-scheme-main-color .vc_tta.vc_tta-tabs.cata-tabs.cata-style1 .vc_tta-tabs-list .vc_tta-tab .vc_tta-icon, body.cata-scheme-main-color .vc_tta.vc_tta-tabs.cata-tabs.cata-style-icon .vc_tta-tabs-list .vc_tta-tab.vc_active>a, body.cata-scheme-main-color .vc_tta.vc_tta-accordion.cata-accordion.cata-style2 .vc_tta-panel .vc_tta-panel-title>a .vc_tta-icon, body.cata-scheme-main-color .vc_tta.vc_tta-tabs.cata-tabs.cata-style1 .vc_tta-tabs-list .vc_tta-tab.vc_active .vc_tta-title-text, body.cata-scheme-main-color .vc_tta.vc_tta-tabs.cata-tour.cata-style1 .vc_tta-tabs-container .vc_tta-tab.vc_active>a, body.cata-scheme-main-color .vc_tta.vc_tta-tabs.cata-tour.cata-style2 .vc_tta-tabs-container .vc_tta-tab.vc_active, body.cata-scheme-main-color .cata-footer .widget_recent_comments li .comment-author-link, body.cata-scheme-main-color .cata-footer .widget_recent_comments li .comment-author-link a, body.cata-scheme-main-color .cata-footer .widget_tag_cloud .tagcloud a:hover, body.cata-scheme-main-color .cata-footer .widget_recent_entries .post-date, body.cata-scheme-main-color .cata-footer .cata-widget-tag-cloud .tagcloud a:hover, body.cata-scheme-main-color .cata-footer .cata-widget-recent-posts .cata-info-detail > span, body.cata-scheme-main-color .cata-footer .color-light a:hover, body.cata-scheme-main-color .cata-footer .color-light .widget_tag_cloud .tagcloud a:hover, body.cata-scheme-main-color .cata-footer .color-light .cata-widget-tag-cloud .tagcloud a:hover, body.cata-scheme-main-color .cata-footer .color-light .widget_recent_entries a:hover, body.cata-scheme-main-color .cata-footer .color-light .widget_archive li a:hover, body.cata-scheme-main-color .cata-footer .color-light .widget_meta ul li a:hover, body.cata-scheme-main-color .cata-footer .color-light .widget_nav_menu ul.menu > li a:hover, body.cata-scheme-main-color .cata-footer .color-light .widget_nav_menu ul li.current_page_item > a, body.cata-scheme-main-color .cata-footer .color-light .widget_pages ul li a:hover, body.cata-scheme-main-color .cata-footer .color-light .widget_pages ul li.current_page_item > a, body.cata-scheme-main-color .cata-footer .color-light .widget_categories li a:hover, body.cata-scheme-main-color .cata-footer .color-light .widget_categories li.current-cat > a, body.cata-scheme-main-color .cata-footer .color-light .widget_text ul.menu > li a:hover, body.cata-scheme-main-color .cata-footer .color-light .widget_text ul.menu > li.current_page_item > a, body.cata-scheme-main-color .cata-footer .color-light #wp-calendar tfoot td#prev a:hover, body.cata-scheme-main-color .cata-footer .color-light #wp-calendar tfoot td#next a:hover, body.cata-scheme-main-color .cata-footer .color-light .cata-widget-flickr a.cata-see-more:hover, body.cata-scheme-main-color .cata-footer .color-light .cata-widget-instagram a.cata-see-more:hover, body.cata-scheme-main-color .cata-footer .color-light .cata-widget-recent-posts .cata-entry-title a:hover, body.cata-scheme-main-color .cata-footer .color-light .cata-widget-recent-comments .cata-item .cata-info > a:hover, body.cata-scheme-main-color .cata-footer .color-light .cata-widget-twitter .cata-item:hover::before, body.cata-scheme-main-color #mobile-nav .mobile-nav-icon-toggle .mobi-nav-btn, body.cata-scheme-main-color .cata-header .catanis-main-menu > ul > li:hover > a, body.cata-scheme-main-color .cata-header .catanis-main-menu > ul > li:focus > a, body.cata-scheme-main-color .cata-header .catanis-main-menu > ul > li:active > a, body.cata-scheme-main-color .cata-header .catanis-main-menu > ul > li.active > a, body.cata-scheme-main-color .cata-header .catanis-main-menu > ul > li.current-menu-item > a, body.cata-scheme-main-color .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li.active > a, body.cata-scheme-main-color .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li.active > a, body.cata-scheme-main-color .cata-header .catanis-main-menu ul ul li a:hover, body.cata-scheme-main-color .cata-header .catanis-main-menu ul ul .current-menu-item > a, body.cata-scheme-main-color .cata-header .catanis-main-menu ul ul .current-menu-item > a, body.cata-scheme-main-color .cata-header .catanis-main-menu ul ul .current-menu-parent > a, body.cata-scheme-main-color .cata-header .catanis-main-menu ul ul .current-menu-ancestor > a, body.cata-scheme-main-color .cata-header .catanis-main-menu li.mega-menu-item ul li[class^="ti-"]:hover:before, body.cata-scheme-main-color .cata-header .catanis-main-menu li.mega-menu-item ul li[class^="fa-"]:hover:before, body.cata-scheme-main-color .cata-header .catanis-main-menu ul ul li[class^="ti-"].current-menu-item:before, body.cata-scheme-main-color .cata-header .catanis-main-menu ul ul li[class^="fa-"].current-menu-item:before, body.cata-scheme-main-color .cata-header .catanis-main-menu li.mega-menu-item ul ul .current-menu-item > a, body.cata-scheme-main-color .cata-header .catanis-main-menu li.mega-menu-item > ul .container > li > a:hover, body.cata-scheme-main-color .cata-header .catanis-main-menu li.mega-menu-item ul ul li:hover a, body.cata-scheme-main-color .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li:hover > a, body.cata-scheme-main-color .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li:focus > a, body.cata-scheme-main-color .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li:active > a, body.cata-scheme-main-color .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li.current-menu-item >a {
+    color: #70A076;
+}
+
+body.cata-scheme-main-color.single-post article.post .meta-tags a:hover, body.cata-scheme-main-color input.button:hover, body.cata-scheme-main-color a.button:hover, body.cata-scheme-main-color input[type^=submit]:hover, body.cata-scheme-main-color .catanis-loader-wraper.cata-style2 .heart:before, body.cata-scheme-main-color .catanis-loader-wraper.cata-style2 .heart:after, body.cata-scheme-main-color .mobi-nav-menu, body.cata-scheme-main-color button.button:hover, body.cata-scheme-main-color input.button:hover, body.cata-scheme-main-color a.button:hover, body.cata-scheme-main-color #quote-carousel .carousel-control:hover, body.cata-scheme-main-color #quote-carousel .dots-indicators li.active, body.cata-scheme-main-color .tp-bullets.custom .tp-bullet:hover, body.cata-scheme-main-color .tp-bullets.custom .tp-bullet.selected, body.cata-scheme-main-color .cata-dropcaps:not(.style-simple), body.cata-scheme-main-color .cata-frsvp > a, body.cata-scheme-main-color #wp-calendar tbody td#today, body.cata-scheme-main-color #wp-calendar tbody td:not(.pad):hover, body.cata-scheme-main-color .cata-related-post .dots-line .slick-dots li.slick-active button, body.cata-scheme-main-color .cata-related-post .dots-square .slick-dots li.slick-active button, body.cata-scheme-main-color .cata-related-post .dots-catanis-width .slick-dots li.slick-active button, body.cata-scheme-main-color .cata-related-post .dots-catanis-height .slick-dots li.slick-active button, body.cata-scheme-main-color .cata-post.cata-isotope .cata-blog-item.format-quote .item, body.cata-scheme-main-color .cata-post.cata-isotope .cata-blog-item.format-link .item, body.cata-scheme-main-color .catanis-loader-wraper.cata-style5 .bounce:before, body.cata-scheme-main-color .dots-line .slick-dots li.slick-active button, body.cata-scheme-main-color .dots-square .slick-dots li.slick-active button, body.cata-scheme-main-color .dots-catanis-width .slick-dots li.slick-active button, body.cata-scheme-main-color .dots-catanis-height .slick-dots li.slick-active button, body.cata-scheme-main-color .cata-pagination-nextprev .newer-posts > a:hover, body.cata-scheme-main-color .cata-pagination-nextprev .older-posts >a:hover, body.cata-scheme-main-color .cata-gallery-imgs .cata-overlay .icon-circle, body.cata-scheme-main-color .video-js .vjs-play-control, body.cata-scheme-main-color .video-js .vjs-volume-level, body.cata-scheme-main-color .video-js .vjs-play-progress, body.cata-scheme-main-color .cata-music-toggle-btn, body.cata-scheme-main-color .wp-playlist .mejs-container .mejs-controls, body.cata-scheme-main-color .cata-contact-form.cata-color-light input[type="submit"]:hover, body.cata-scheme-main-color .cata-audio-mp3 .mejs-controls .mejs-time-rail .mejs-time-loaded, body.cata-scheme-main-color .cata-audio-mp3 .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current, body.cata-scheme-main-color .cata-audio-mp3 .mejs-container .mejs-controls .mejs-fullscreen-button, body.cata-scheme-main-color .cata-audio-mp3 .mejs-container .mejs-controls .mejs-playpause-button, body.cata-scheme-main-color .cata-audio-mp3 .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current, body.cata-scheme-main-color .cata-timeline-top:before, body.cata-scheme-main-color .cata-timeline-bottom:before, body.cata-scheme-main-color .cata-iconbox.cata-style3 .icon:hover, body.cata-scheme-main-color .cata-single-image.effect-oval > div figure:after, body.cata-scheme-main-color .cata-image-title.effect-slide-top > div figure figcaption, body.cata-scheme-main-color .cata-team.cata-style1 .cata-team-center-slider .cata-item.slick-center .info, body.cata-scheme-main-color .cata-widget-instagram .cata-insta-items a:before, body.cata-scheme-main-color .cata-widget-flickr .cata-flickr-items a:before, body.cata-scheme-main-color .widget_tag_cloud .tagcloud a:hover, body.cata-scheme-main-color .cata-widget-tag-cloud .tagcloud a:hover, body.cata-scheme-main-color .cata-widget-recent-posts .cata-thumb-none .cata-num, body.cata-scheme-main-color .cata-widget-subscriptions .cata-subscribe.cata-style-background form button.button, body.cata-scheme-main-color .vc_tta.vc_tta-accordion.cata-accordion.cata-style1 .vc_tta-panel .vc_tta-panel-title>a .vc_tta-icon {
+    background-color: #70A076;
+}
+
+body.cata-scheme-extra-color1.error404 article h1, body.cata-scheme-extra-color1 a:hover, body.cata-scheme-extra-color1 .no-items, body.cata-scheme-extra-color1 .catanis-loader-wraper.cata-style3 .heart i, body.cata-scheme-extra-color1 .catanis-loader-wraper.cata-style3 .heart-reverse i, body.cata-scheme-extra-color1 .catanis-loader-wraper.cata-style1 .loader-heart, body.cata-scheme-extra-color1 .cata-backtotop .fa, body.cata-scheme-extra-color1 .cata-dropcaps.style-simple, body.cata-scheme-extra-color1 .gallery.gallery-size-large a:before, body.cata-scheme-extra-color1 .cata-blog-item .post-quote .top-icon, body.cata-scheme-extra-color1 .cata-blog-item .post-link .top-icon, body.cata-scheme-extra-color1 .cata-blog-item .entry-meta li.meta-seperate:before, body.cata-scheme-extra-color1 .cata-blog-item .entry-meta li a:hover, body.cata-scheme-extra-color1 .cata-blog-item .entry-meta li.meta-love .fa, body.cata-scheme-extra-color1 .cata-blog-item .entry-meta li.meta-comments .fa, body.cata-scheme-extra-color1 .cata-blog-item .entry-meta li.meta-featured-post, body.cata-scheme-extra-color1 .cata-blog-item .item .tags-links a:hover, body.cata-scheme-extra-color1 .cata-blog-item .item .tags-links .fa, body.cata-scheme-extra-color1 .cata-blog-item .cata-blog-item-title .sticky, body.cata-scheme-extra-color1 .cata-related-post .dots-rounded .slick-dots li.slick-active button:before, body.cata-scheme-extra-color1 .cata-related-post .cata-item .entry-meta li.meta-date, body.cata-scheme-extra-color1 .cata-blog-item .cata-blog-item-excerpt a.read-more, body.cata-scheme-extra-color1 .cata-comments-area ol.commentlist li .meta-datetime, body.cata-scheme-extra-color1 .cata-comments-area ol.commentlist li div.reply a, body.cata-scheme-extra-color1 #comments ol.commentlist li.comment p.comment-awaiting-moderation, body.cata-scheme-extra-color1 .single-post article.post .item .entry-content .wrap-entry-content a, body.cata-scheme-extra-color1 .widget_meta ul li:before, body.cata-scheme-extra-color1 .widget-container ul.menu > li.current-menu-item > a, body.cata-scheme-extra-color1 #wp-calendar tbody td >a, body.cata-scheme-extra-color1 .cata-widget-twitter .cata-item:before, body.cata-scheme-extra-color1 .cata-widget-twitter .tweet-content a, body.cata-scheme-extra-color1 .cata-widget-twitter .cata-item .author-datetime a, body.cata-scheme-extra-color1 .cata-widget-recent-comments .cata-item .cata-info > a:hover, body.cata-scheme-extra-color1 .cata-widget-subscriptions .cata-subscribe button.button:hover, body.cata-scheme-extra-color1 .cata-widget-testimonials .cata-item .cata-title-occupation a, body.cata-scheme-extra-color1 .catanis-main-menu > ul > li > a::before, body.cata-scheme-extra-color1 .cata-isotope-filter ul li:after, body.cata-scheme-extra-color1 .cata-isotope-filter ul li:hover a, body.cata-scheme-extra-color1 .cata-isotope-filter ul li.selected a, body.cata-scheme-extra-color1 .cata-portfolio .cata-isotope-item:hover .cata-item-info .cata-cates a:hover, body.cata-scheme-extra-color1 .cata-portfolio .cata-love-counter .cata-love, body.cata-scheme-extra-color1 .cata-portfolio .cata-item-info .cata-cates, body.cata-scheme-extra-color1 .cata-portfolio .cata-item-info .cata-cates a, body.cata-scheme-extra-color1 .cata-project-detail .cata-project-info .project-info a:hover, body.cata-scheme-extra-color1 .cata-timeline-icon, body.cata-scheme-extra-color1 .cata-timeline-content .cata-date, body.cata-scheme-extra-color1 .cata-imagebox:hover .imagebox-wrap h6, body.cata-scheme-extra-color1 .cata-imagebox:hover .imagebox-wrap h6 a, body.cata-scheme-extra-color1 .cata-iconbox:hover .iconbox-wrap h6, body.cata-scheme-extra-color1 .cata-iconbox:hover .iconbox-wrap h6 a, body.cata-scheme-extra-color1 .cata-iconbox .icon, body.cata-scheme-extra-color1 .cata-pricetable .cata-icon, body.cata-scheme-extra-color1 .cata-twitter .cata-item:before, body.cata-scheme-extra-color1 .cata-twitter .tweet-content a, body.cata-scheme-extra-color1 .cata-twitter .cata-item .author-datetime a, body.cata-scheme-extra-color1 .cata-testimonial.cata-style6:not(.cata-color-text-light) .cata-item .cata-info em, body.cata-scheme-extra-color1 .cata-testimonial.cata-style6:not(.cata-color-text-light) .cata-item .cata-info .title, body.cata-scheme-extra-color1 .cata-double-slider .double-slider-nav a:hover, body.cata-scheme-extra-color1 .cata-slick-slider .slick-slider .slick-arrow:hover, body.cata-scheme-extra-color1 .slick-dots li.slick-active button:before, body.cata-scheme-extra-color1 .vc_tta.vc_general .vc_tta-tab>a:hover, body.cata-scheme-extra-color1 .vc_tta.vc_tta-tabs.cata-tabs.cata-style1 .vc_tta-tabs-list .vc_tta-tab .vc_tta-icon, body.cata-scheme-extra-color1 .vc_tta.vc_tta-tabs.cata-tabs.cata-style-icon .vc_tta-tabs-list .vc_tta-tab.vc_active>a, body.cata-scheme-extra-color1 .vc_tta.vc_tta-accordion.cata-accordion.cata-style2 .vc_tta-panel .vc_tta-panel-title>a .vc_tta-icon, body.cata-scheme-extra-color1 .vc_tta.vc_tta-tabs.cata-tabs.cata-style1 .vc_tta-tabs-list .vc_tta-tab.vc_active .vc_tta-title-text, body.cata-scheme-extra-color1 .vc_tta.vc_tta-tabs.cata-tour.cata-style1 .vc_tta-tabs-container .vc_tta-tab.vc_active>a, body.cata-scheme-extra-color1 .vc_tta.vc_tta-tabs.cata-tour.cata-style2 .vc_tta-tabs-container .vc_tta-tab.vc_active, body.cata-scheme-extra-color1 .cata-footer .widget_recent_comments li .comment-author-link, body.cata-scheme-extra-color1 .cata-footer .widget_recent_comments li .comment-author-link a, body.cata-scheme-extra-color1 .cata-footer .widget_tag_cloud .tagcloud a:hover, body.cata-scheme-extra-color1 .cata-footer .widget_recent_entries .post-date, body.cata-scheme-extra-color1 .cata-footer .cata-widget-tag-cloud .tagcloud a:hover, body.cata-scheme-extra-color1 .cata-footer .cata-widget-recent-posts .cata-info-detail > span, body.cata-scheme-extra-color1 .cata-footer .color-light a:hover, body.cata-scheme-extra-color1 .cata-footer .color-light .widget_tag_cloud .tagcloud a:hover, body.cata-scheme-extra-color1 .cata-footer .color-light .cata-widget-tag-cloud .tagcloud a:hover, body.cata-scheme-extra-color1 .cata-footer .color-light .widget_recent_entries a:hover, body.cata-scheme-extra-color1 .cata-footer .color-light .widget_archive li a:hover, body.cata-scheme-extra-color1 .cata-footer .color-light .widget_meta ul li a:hover, body.cata-scheme-extra-color1 .cata-footer .color-light .widget_nav_menu ul.menu > li a:hover, body.cata-scheme-extra-color1 .cata-footer .color-light .widget_nav_menu ul li.current_page_item > a, body.cata-scheme-extra-color1 .cata-footer .color-light .widget_pages ul li a:hover, body.cata-scheme-extra-color1 .cata-footer .color-light .widget_pages ul li.current_page_item > a, body.cata-scheme-extra-color1 .cata-footer .color-light .widget_categories li a:hover, body.cata-scheme-extra-color1 .cata-footer .color-light .widget_categories li.current-cat > a, body.cata-scheme-extra-color1 .cata-footer .color-light .widget_text ul.menu > li a:hover, body.cata-scheme-extra-color1 .cata-footer .color-light .widget_text ul.menu > li.current_page_item > a, body.cata-scheme-extra-color1 .cata-footer .color-light #wp-calendar tfoot td#prev a:hover, body.cata-scheme-extra-color1 .cata-footer .color-light #wp-calendar tfoot td#next a:hover, body.cata-scheme-extra-color1 .cata-footer .color-light .cata-widget-flickr a.cata-see-more:hover, body.cata-scheme-extra-color1 .cata-footer .color-light .cata-widget-instagram a.cata-see-more:hover, body.cata-scheme-extra-color1 .cata-footer .color-light .cata-widget-recent-posts .cata-entry-title a:hover, body.cata-scheme-extra-color1 .cata-footer .color-light .cata-widget-recent-comments .cata-item .cata-info > a:hover, body.cata-scheme-extra-color1 .cata-footer .color-light .cata-widget-twitter .cata-item:hover::before, body.cata-scheme-extra-color1 #mobile-nav .mobile-nav-icon-toggle .mobi-nav-btn, body.cata-scheme-extra-color1 .cata-header .catanis-main-menu > ul > li:hover > a, body.cata-scheme-extra-color1 .cata-header .catanis-main-menu > ul > li:focus > a, body.cata-scheme-extra-color1 .cata-header .catanis-main-menu > ul > li:active > a, body.cata-scheme-extra-color1 .cata-header .catanis-main-menu > ul > li.active > a, body.cata-scheme-extra-color1 .cata-header .catanis-main-menu > ul > li.current-menu-item > a, body.cata-scheme-extra-color1 .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li.active > a, body.cata-scheme-extra-color1 .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li.active > a, body.cata-scheme-extra-color1 .cata-header .catanis-main-menu ul ul li a:hover, body.cata-scheme-extra-color1 .cata-header .catanis-main-menu ul ul .current-menu-item > a, body.cata-scheme-extra-color1 .cata-header .catanis-main-menu ul ul .current-menu-item > a, body.cata-scheme-extra-color1 .cata-header .catanis-main-menu ul ul .current-menu-parent > a, body.cata-scheme-extra-color1 .cata-header .catanis-main-menu ul ul .current-menu-ancestor > a, body.cata-scheme-extra-color1 .cata-header .catanis-main-menu li.mega-menu-item ul li[class^="ti-"]:hover:before, body.cata-scheme-extra-color1 .cata-header .catanis-main-menu li.mega-menu-item ul li[class^="fa-"]:hover:before, body.cata-scheme-extra-color1 .cata-header .catanis-main-menu ul ul li[class^="ti-"].current-menu-item:before, body.cata-scheme-extra-color1 .cata-header .catanis-main-menu ul ul li[class^="fa-"].current-menu-item:before, body.cata-scheme-extra-color1 .cata-header .catanis-main-menu li.mega-menu-item ul ul .current-menu-item > a, body.cata-scheme-extra-color1 .cata-header .catanis-main-menu li.mega-menu-item > ul .container > li > a:hover, body.cata-scheme-extra-color1 .cata-header .catanis-main-menu li.mega-menu-item ul ul li:hover a, body.cata-scheme-extra-color1 .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li:hover > a, body.cata-scheme-extra-color1 .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li:focus > a, body.cata-scheme-extra-color1 .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li:active > a, body.cata-scheme-extra-color1 .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li.current-menu-item >a {
+    color: #e49497;
+}
+
+body.cata-scheme-extra-color1.single-post article.post .meta-tags a:hover, body.cata-scheme-extra-color1 input.button:hover, body.cata-scheme-extra-color1 a.button:hover, body.cata-scheme-extra-color1 input[type^=submit]:hover, body.cata-scheme-extra-color1 .catanis-loader-wraper.cata-style2 .heart:before, body.cata-scheme-extra-color1 .catanis-loader-wraper.cata-style2 .heart:after, body.cata-scheme-extra-color1 .mobi-nav-menu, body.cata-scheme-extra-color1 button.button:hover, body.cata-scheme-extra-color1 input.button:hover, body.cata-scheme-extra-color1 a.button:hover, body.cata-scheme-extra-color1 #quote-carousel .carousel-control:hover, body.cata-scheme-extra-color1 #quote-carousel .dots-indicators li.active, body.cata-scheme-extra-color1 .tp-bullets.custom .tp-bullet:hover, body.cata-scheme-extra-color1 .tp-bullets.custom .tp-bullet.selected, body.cata-scheme-extra-color1 .cata-dropcaps:not(.style-simple), body.cata-scheme-extra-color1 .cata-frsvp > a, body.cata-scheme-extra-color1 #wp-calendar tbody td#today, body.cata-scheme-extra-color1 #wp-calendar tbody td:not(.pad):hover, body.cata-scheme-extra-color1 .cata-related-post .dots-line .slick-dots li.slick-active button, body.cata-scheme-extra-color1 .cata-related-post .dots-square .slick-dots li.slick-active button, body.cata-scheme-extra-color1 .cata-related-post .dots-catanis-width .slick-dots li.slick-active button, body.cata-scheme-extra-color1 .cata-related-post .dots-catanis-height .slick-dots li.slick-active button, body.cata-scheme-extra-color1 .cata-post.cata-isotope .cata-blog-item.format-quote .item, body.cata-scheme-extra-color1 .cata-post.cata-isotope .cata-blog-item.format-link .item, body.cata-scheme-extra-color1 .catanis-loader-wraper.cata-style5 .bounce:before, body.cata-scheme-extra-color1 .dots-line .slick-dots li.slick-active button, body.cata-scheme-extra-color1 .dots-square .slick-dots li.slick-active button, body.cata-scheme-extra-color1 .dots-catanis-width .slick-dots li.slick-active button, body.cata-scheme-extra-color1 .dots-catanis-height .slick-dots li.slick-active button, body.cata-scheme-extra-color1 .cata-pagination-nextprev .newer-posts > a:hover, body.cata-scheme-extra-color1 .cata-pagination-nextprev .older-posts >a:hover, body.cata-scheme-extra-color1 .cata-gallery-imgs .cata-overlay .icon-circle, body.cata-scheme-extra-color1 .video-js .vjs-play-control, body.cata-scheme-extra-color1 .video-js .vjs-volume-level, body.cata-scheme-extra-color1 .video-js .vjs-play-progress, body.cata-scheme-extra-color1 .cata-music-toggle-btn, body.cata-scheme-extra-color1 .wp-playlist .mejs-container .mejs-controls, body.cata-scheme-extra-color1 .cata-contact-form.cata-color-light input[type="submit"]:hover, body.cata-scheme-extra-color1 .cata-audio-mp3 .mejs-controls .mejs-time-rail .mejs-time-loaded, body.cata-scheme-extra-color1 .cata-audio-mp3 .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current, body.cata-scheme-extra-color1 .cata-audio-mp3 .mejs-container .mejs-controls .mejs-fullscreen-button, body.cata-scheme-extra-color1 .cata-audio-mp3 .mejs-container .mejs-controls .mejs-playpause-button, body.cata-scheme-extra-color1 .cata-audio-mp3 .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current, body.cata-scheme-extra-color1 .cata-timeline-top:before, body.cata-scheme-extra-color1 .cata-timeline-bottom:before, body.cata-scheme-extra-color1 .cata-iconbox.cata-style3 .icon:hover, body.cata-scheme-extra-color1 .cata-single-image.effect-oval > div figure:after, body.cata-scheme-extra-color1 .cata-image-title.effect-slide-top > div figure figcaption, body.cata-scheme-extra-color1 .cata-team.cata-style1 .cata-team-center-slider .cata-item.slick-center .info, body.cata-scheme-extra-color1 .cata-widget-instagram .cata-insta-items a:before, body.cata-scheme-extra-color1 .cata-widget-flickr .cata-flickr-items a:before, body.cata-scheme-extra-color1 .widget_tag_cloud .tagcloud a:hover, body.cata-scheme-extra-color1 .cata-widget-tag-cloud .tagcloud a:hover, body.cata-scheme-extra-color1 .cata-widget-recent-posts .cata-thumb-none .cata-num, body.cata-scheme-extra-color1 .cata-widget-subscriptions .cata-subscribe.cata-style-background form button.button, body.cata-scheme-extra-color1 .vc_tta.vc_tta-accordion.cata-accordion.cata-style1 .vc_tta-panel .vc_tta-panel-title>a .vc_tta-icon {
+    background-color: #e49497;
+}
+
+body.cata-scheme-extra-color2.error404 article h1, body.cata-scheme-extra-color2 a:hover, body.cata-scheme-extra-color2 .no-items, body.cata-scheme-extra-color2 .catanis-loader-wraper.cata-style3 .heart i, body.cata-scheme-extra-color2 .catanis-loader-wraper.cata-style3 .heart-reverse i, body.cata-scheme-extra-color2 .catanis-loader-wraper.cata-style1 .loader-heart, body.cata-scheme-extra-color2 .cata-backtotop .fa, body.cata-scheme-extra-color2 .cata-dropcaps.style-simple, body.cata-scheme-extra-color2 .gallery.gallery-size-large a:before, body.cata-scheme-extra-color2 .cata-blog-item .post-quote .top-icon, body.cata-scheme-extra-color2 .cata-blog-item .post-link .top-icon, body.cata-scheme-extra-color2 .cata-blog-item .entry-meta li.meta-seperate:before, body.cata-scheme-extra-color2 .cata-blog-item .entry-meta li a:hover, body.cata-scheme-extra-color2 .cata-blog-item .entry-meta li.meta-love .fa, body.cata-scheme-extra-color2 .cata-blog-item .entry-meta li.meta-comments .fa, body.cata-scheme-extra-color2 .cata-blog-item .entry-meta li.meta-featured-post, body.cata-scheme-extra-color2 .cata-blog-item .item .tags-links a:hover, body.cata-scheme-extra-color2 .cata-blog-item .item .tags-links .fa, body.cata-scheme-extra-color2 .cata-blog-item .cata-blog-item-title .sticky, body.cata-scheme-extra-color2 .cata-related-post .dots-rounded .slick-dots li.slick-active button:before, body.cata-scheme-extra-color2 .cata-related-post .cata-item .entry-meta li.meta-date, body.cata-scheme-extra-color2 .cata-blog-item .cata-blog-item-excerpt a.read-more, body.cata-scheme-extra-color2 .cata-comments-area ol.commentlist li .meta-datetime, body.cata-scheme-extra-color2 .cata-comments-area ol.commentlist li div.reply a, body.cata-scheme-extra-color2 #comments ol.commentlist li.comment p.comment-awaiting-moderation, body.cata-scheme-extra-color2 .single-post article.post .item .entry-content .wrap-entry-content a, body.cata-scheme-extra-color2 .widget_meta ul li:before, body.cata-scheme-extra-color2 .widget-container ul.menu > li.current-menu-item > a, body.cata-scheme-extra-color2 #wp-calendar tbody td >a, body.cata-scheme-extra-color2 .cata-widget-twitter .cata-item:before, body.cata-scheme-extra-color2 .cata-widget-twitter .tweet-content a, body.cata-scheme-extra-color2 .cata-widget-twitter .cata-item .author-datetime a, body.cata-scheme-extra-color2 .cata-widget-recent-comments .cata-item .cata-info > a:hover, body.cata-scheme-extra-color2 .cata-widget-subscriptions .cata-subscribe button.button:hover, body.cata-scheme-extra-color2 .cata-widget-testimonials .cata-item .cata-title-occupation a, body.cata-scheme-extra-color2 .catanis-main-menu > ul > li > a::before, body.cata-scheme-extra-color2 .cata-isotope-filter ul li:after, body.cata-scheme-extra-color2 .cata-isotope-filter ul li:hover a, body.cata-scheme-extra-color2 .cata-isotope-filter ul li.selected a, body.cata-scheme-extra-color2 .cata-portfolio .cata-isotope-item:hover .cata-item-info .cata-cates a:hover, body.cata-scheme-extra-color2 .cata-portfolio .cata-love-counter .cata-love, body.cata-scheme-extra-color2 .cata-portfolio .cata-item-info .cata-cates, body.cata-scheme-extra-color2 .cata-portfolio .cata-item-info .cata-cates a, body.cata-scheme-extra-color2 .cata-project-detail .cata-project-info .project-info a:hover, body.cata-scheme-extra-color2 .cata-timeline-icon, body.cata-scheme-extra-color2 .cata-timeline-content .cata-date, body.cata-scheme-extra-color2 .cata-imagebox:hover .imagebox-wrap h6, body.cata-scheme-extra-color2 .cata-imagebox:hover .imagebox-wrap h6 a, body.cata-scheme-extra-color2 .cata-iconbox:hover .iconbox-wrap h6, body.cata-scheme-extra-color2 .cata-iconbox:hover .iconbox-wrap h6 a, body.cata-scheme-extra-color2 .cata-iconbox .icon, body.cata-scheme-extra-color2 .cata-pricetable .cata-icon, body.cata-scheme-extra-color2 .cata-twitter .cata-item:before, body.cata-scheme-extra-color2 .cata-twitter .tweet-content a, body.cata-scheme-extra-color2 .cata-twitter .cata-item .author-datetime a, body.cata-scheme-extra-color2 .cata-testimonial.cata-style6:not(.cata-color-text-light) .cata-item .cata-info em, body.cata-scheme-extra-color2 .cata-testimonial.cata-style6:not(.cata-color-text-light) .cata-item .cata-info .title, body.cata-scheme-extra-color2 .cata-double-slider .double-slider-nav a:hover, body.cata-scheme-extra-color2 .cata-slick-slider .slick-slider .slick-arrow:hover, body.cata-scheme-extra-color2 .slick-dots li.slick-active button:before, body.cata-scheme-extra-color2 .vc_tta.vc_general .vc_tta-tab>a:hover, body.cata-scheme-extra-color2 .vc_tta.vc_tta-tabs.cata-tabs.cata-style1 .vc_tta-tabs-list .vc_tta-tab .vc_tta-icon, body.cata-scheme-extra-color2 .vc_tta.vc_tta-tabs.cata-tabs.cata-style-icon .vc_tta-tabs-list .vc_tta-tab.vc_active>a, body.cata-scheme-extra-color2 .vc_tta.vc_tta-accordion.cata-accordion.cata-style2 .vc_tta-panel .vc_tta-panel-title>a .vc_tta-icon, body.cata-scheme-extra-color2 .vc_tta.vc_tta-tabs.cata-tabs.cata-style1 .vc_tta-tabs-list .vc_tta-tab.vc_active .vc_tta-title-text, body.cata-scheme-extra-color2 .vc_tta.vc_tta-tabs.cata-tour.cata-style1 .vc_tta-tabs-container .vc_tta-tab.vc_active>a, body.cata-scheme-extra-color2 .vc_tta.vc_tta-tabs.cata-tour.cata-style2 .vc_tta-tabs-container .vc_tta-tab.vc_active, body.cata-scheme-extra-color2 .cata-footer .widget_recent_comments li .comment-author-link, body.cata-scheme-extra-color2 .cata-footer .widget_recent_comments li .comment-author-link a, body.cata-scheme-extra-color2 .cata-footer .widget_tag_cloud .tagcloud a:hover, body.cata-scheme-extra-color2 .cata-footer .widget_recent_entries .post-date, body.cata-scheme-extra-color2 .cata-footer .cata-widget-tag-cloud .tagcloud a:hover, body.cata-scheme-extra-color2 .cata-footer .cata-widget-recent-posts .cata-info-detail > span, body.cata-scheme-extra-color2 .cata-footer .color-light a:hover, body.cata-scheme-extra-color2 .cata-footer .color-light .widget_tag_cloud .tagcloud a:hover, body.cata-scheme-extra-color2 .cata-footer .color-light .cata-widget-tag-cloud .tagcloud a:hover, body.cata-scheme-extra-color2 .cata-footer .color-light .widget_recent_entries a:hover, body.cata-scheme-extra-color2 .cata-footer .color-light .widget_archive li a:hover, body.cata-scheme-extra-color2 .cata-footer .color-light .widget_meta ul li a:hover, body.cata-scheme-extra-color2 .cata-footer .color-light .widget_nav_menu ul.menu > li a:hover, body.cata-scheme-extra-color2 .cata-footer .color-light .widget_nav_menu ul li.current_page_item > a, body.cata-scheme-extra-color2 .cata-footer .color-light .widget_pages ul li a:hover, body.cata-scheme-extra-color2 .cata-footer .color-light .widget_pages ul li.current_page_item > a, body.cata-scheme-extra-color2 .cata-footer .color-light .widget_categories li a:hover, body.cata-scheme-extra-color2 .cata-footer .color-light .widget_categories li.current-cat > a, body.cata-scheme-extra-color2 .cata-footer .color-light .widget_text ul.menu > li a:hover, body.cata-scheme-extra-color2 .cata-footer .color-light .widget_text ul.menu > li.current_page_item > a, body.cata-scheme-extra-color2 .cata-footer .color-light #wp-calendar tfoot td#prev a:hover, body.cata-scheme-extra-color2 .cata-footer .color-light #wp-calendar tfoot td#next a:hover, body.cata-scheme-extra-color2 .cata-footer .color-light .cata-widget-flickr a.cata-see-more:hover, body.cata-scheme-extra-color2 .cata-footer .color-light .cata-widget-instagram a.cata-see-more:hover, body.cata-scheme-extra-color2 .cata-footer .color-light .cata-widget-recent-posts .cata-entry-title a:hover, body.cata-scheme-extra-color2 .cata-footer .color-light .cata-widget-recent-comments .cata-item .cata-info > a:hover, body.cata-scheme-extra-color2 .cata-footer .color-light .cata-widget-twitter .cata-item:hover::before, body.cata-scheme-extra-color2 #mobile-nav .mobile-nav-icon-toggle .mobi-nav-btn, body.cata-scheme-extra-color2 .cata-header .catanis-main-menu > ul > li:hover > a, body.cata-scheme-extra-color2 .cata-header .catanis-main-menu > ul > li:focus > a, body.cata-scheme-extra-color2 .cata-header .catanis-main-menu > ul > li:active > a, body.cata-scheme-extra-color2 .cata-header .catanis-main-menu > ul > li.active > a, body.cata-scheme-extra-color2 .cata-header .catanis-main-menu > ul > li.current-menu-item > a, body.cata-scheme-extra-color2 .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li.active > a, body.cata-scheme-extra-color2 .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li.active > a, body.cata-scheme-extra-color2 .cata-header .catanis-main-menu ul ul li a:hover, body.cata-scheme-extra-color2 .cata-header .catanis-main-menu ul ul .current-menu-item > a, body.cata-scheme-extra-color2 .cata-header .catanis-main-menu ul ul .current-menu-item > a, body.cata-scheme-extra-color2 .cata-header .catanis-main-menu ul ul .current-menu-parent > a, body.cata-scheme-extra-color2 .cata-header .catanis-main-menu ul ul .current-menu-ancestor > a, body.cata-scheme-extra-color2 .cata-header .catanis-main-menu li.mega-menu-item ul li[class^="ti-"]:hover:before, body.cata-scheme-extra-color2 .cata-header .catanis-main-menu li.mega-menu-item ul li[class^="fa-"]:hover:before, body.cata-scheme-extra-color2 .cata-header .catanis-main-menu ul ul li[class^="ti-"].current-menu-item:before, body.cata-scheme-extra-color2 .cata-header .catanis-main-menu ul ul li[class^="fa-"].current-menu-item:before, body.cata-scheme-extra-color2 .cata-header .catanis-main-menu li.mega-menu-item ul ul .current-menu-item > a, body.cata-scheme-extra-color2 .cata-header .catanis-main-menu li.mega-menu-item > ul .container > li > a:hover, body.cata-scheme-extra-color2 .cata-header .catanis-main-menu li.mega-menu-item ul ul li:hover a, body.cata-scheme-extra-color2 .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li:hover > a, body.cata-scheme-extra-color2 .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li:focus > a, body.cata-scheme-extra-color2 .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li:active > a, body.cata-scheme-extra-color2 .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li.current-menu-item >a {
+    color: #9d071f;
+}
+
+body.cata-scheme-extra-color2.single-post article.post .meta-tags a:hover, body.cata-scheme-extra-color2 input.button:hover, body.cata-scheme-extra-color2 a.button:hover, body.cata-scheme-extra-color2 input[type^=submit]:hover, body.cata-scheme-extra-color2 .catanis-loader-wraper.cata-style2 .heart:before, body.cata-scheme-extra-color2 .catanis-loader-wraper.cata-style2 .heart:after, body.cata-scheme-extra-color2 .mobi-nav-menu, body.cata-scheme-extra-color2 button.button:hover, body.cata-scheme-extra-color2 input.button:hover, body.cata-scheme-extra-color2 a.button:hover, body.cata-scheme-extra-color2 #quote-carousel .carousel-control:hover, body.cata-scheme-extra-color2 #quote-carousel .dots-indicators li.active, body.cata-scheme-extra-color2 .tp-bullets.custom .tp-bullet:hover, body.cata-scheme-extra-color2 .tp-bullets.custom .tp-bullet.selected, body.cata-scheme-extra-color2 .cata-dropcaps:not(.style-simple), body.cata-scheme-extra-color2 .cata-frsvp > a, body.cata-scheme-extra-color2 #wp-calendar tbody td#today, body.cata-scheme-extra-color2 #wp-calendar tbody td:not(.pad):hover, body.cata-scheme-extra-color2 .cata-related-post .dots-line .slick-dots li.slick-active button, body.cata-scheme-extra-color2 .cata-related-post .dots-square .slick-dots li.slick-active button, body.cata-scheme-extra-color2 .cata-related-post .dots-catanis-width .slick-dots li.slick-active button, body.cata-scheme-extra-color2 .cata-related-post .dots-catanis-height .slick-dots li.slick-active button, body.cata-scheme-extra-color2 .cata-post.cata-isotope .cata-blog-item.format-quote .item, body.cata-scheme-extra-color2 .cata-post.cata-isotope .cata-blog-item.format-link .item, body.cata-scheme-extra-color2 .catanis-loader-wraper.cata-style5 .bounce:before, body.cata-scheme-extra-color2 .dots-line .slick-dots li.slick-active button, body.cata-scheme-extra-color2 .dots-square .slick-dots li.slick-active button, body.cata-scheme-extra-color2 .dots-catanis-width .slick-dots li.slick-active button, body.cata-scheme-extra-color2 .dots-catanis-height .slick-dots li.slick-active button, body.cata-scheme-extra-color2 .cata-pagination-nextprev .newer-posts > a:hover, body.cata-scheme-extra-color2 .cata-pagination-nextprev .older-posts >a:hover, body.cata-scheme-extra-color2 .cata-gallery-imgs .cata-overlay .icon-circle, body.cata-scheme-extra-color2 .video-js .vjs-play-control, body.cata-scheme-extra-color2 .video-js .vjs-volume-level, body.cata-scheme-extra-color2 .video-js .vjs-play-progress, body.cata-scheme-extra-color2 .cata-music-toggle-btn, body.cata-scheme-extra-color2 .wp-playlist .mejs-container .mejs-controls, body.cata-scheme-extra-color2 .cata-contact-form.cata-color-light input[type="submit"]:hover, body.cata-scheme-extra-color2 .cata-audio-mp3 .mejs-controls .mejs-time-rail .mejs-time-loaded, body.cata-scheme-extra-color2 .cata-audio-mp3 .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current, body.cata-scheme-extra-color2 .cata-audio-mp3 .mejs-container .mejs-controls .mejs-fullscreen-button, body.cata-scheme-extra-color2 .cata-audio-mp3 .mejs-container .mejs-controls .mejs-playpause-button, body.cata-scheme-extra-color2 .cata-audio-mp3 .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current, body.cata-scheme-extra-color2 .cata-timeline-top:before, body.cata-scheme-extra-color2 .cata-timeline-bottom:before, body.cata-scheme-extra-color2 .cata-iconbox.cata-style3 .icon:hover, body.cata-scheme-extra-color2 .cata-single-image.effect-oval > div figure:after, body.cata-scheme-extra-color2 .cata-image-title.effect-slide-top > div figure figcaption, body.cata-scheme-extra-color2 .cata-team.cata-style1 .cata-team-center-slider .cata-item.slick-center .info, body.cata-scheme-extra-color2 .cata-widget-instagram .cata-insta-items a:before, body.cata-scheme-extra-color2 .cata-widget-flickr .cata-flickr-items a:before, body.cata-scheme-extra-color2 .widget_tag_cloud .tagcloud a:hover, body.cata-scheme-extra-color2 .cata-widget-tag-cloud .tagcloud a:hover, body.cata-scheme-extra-color2 .cata-widget-recent-posts .cata-thumb-none .cata-num, body.cata-scheme-extra-color2 .cata-widget-subscriptions .cata-subscribe.cata-style-background form button.button, body.cata-scheme-extra-color2 .vc_tta.vc_tta-accordion.cata-accordion.cata-style1 .vc_tta-panel .vc_tta-panel-title>a .vc_tta-icon {
+    background-color: #9d071f;
+}
+
+body.cata-scheme-extra-color3.error404 article h1, body.cata-scheme-extra-color3 a:hover, body.cata-scheme-extra-color3 .no-items, body.cata-scheme-extra-color3 .catanis-loader-wraper.cata-style3 .heart i, body.cata-scheme-extra-color3 .catanis-loader-wraper.cata-style3 .heart-reverse i, body.cata-scheme-extra-color3 .catanis-loader-wraper.cata-style1 .loader-heart, body.cata-scheme-extra-color3 .cata-backtotop .fa, body.cata-scheme-extra-color3 .cata-dropcaps.style-simple, body.cata-scheme-extra-color3 .gallery.gallery-size-large a:before, body.cata-scheme-extra-color3 .cata-blog-item .post-quote .top-icon, body.cata-scheme-extra-color3 .cata-blog-item .post-link .top-icon, body.cata-scheme-extra-color3 .cata-blog-item .entry-meta li.meta-seperate:before, body.cata-scheme-extra-color3 .cata-blog-item .entry-meta li a:hover, body.cata-scheme-extra-color3 .cata-blog-item .entry-meta li.meta-love .fa, body.cata-scheme-extra-color3 .cata-blog-item .entry-meta li.meta-comments .fa, body.cata-scheme-extra-color3 .cata-blog-item .entry-meta li.meta-featured-post, body.cata-scheme-extra-color3 .cata-blog-item .item .tags-links a:hover, body.cata-scheme-extra-color3 .cata-blog-item .item .tags-links .fa, body.cata-scheme-extra-color3 .cata-blog-item .cata-blog-item-title .sticky, body.cata-scheme-extra-color3 .cata-related-post .dots-rounded .slick-dots li.slick-active button:before, body.cata-scheme-extra-color3 .cata-related-post .cata-item .entry-meta li.meta-date, body.cata-scheme-extra-color3 .cata-blog-item .cata-blog-item-excerpt a.read-more, body.cata-scheme-extra-color3 .cata-comments-area ol.commentlist li .meta-datetime, body.cata-scheme-extra-color3 .cata-comments-area ol.commentlist li div.reply a, body.cata-scheme-extra-color3 #comments ol.commentlist li.comment p.comment-awaiting-moderation, body.cata-scheme-extra-color3 .single-post article.post .item .entry-content .wrap-entry-content a, body.cata-scheme-extra-color3 .widget_meta ul li:before, body.cata-scheme-extra-color3 .widget-container ul.menu > li.current-menu-item > a, body.cata-scheme-extra-color3 #wp-calendar tbody td >a, body.cata-scheme-extra-color3 .cata-widget-twitter .cata-item:before, body.cata-scheme-extra-color3 .cata-widget-twitter .tweet-content a, body.cata-scheme-extra-color3 .cata-widget-twitter .cata-item .author-datetime a, body.cata-scheme-extra-color3 .cata-widget-recent-comments .cata-item .cata-info > a:hover, body.cata-scheme-extra-color3 .cata-widget-subscriptions .cata-subscribe button.button:hover, body.cata-scheme-extra-color3 .cata-widget-testimonials .cata-item .cata-title-occupation a, body.cata-scheme-extra-color3 .catanis-main-menu > ul > li > a::before, body.cata-scheme-extra-color3 .cata-isotope-filter ul li:after, body.cata-scheme-extra-color3 .cata-isotope-filter ul li:hover a, body.cata-scheme-extra-color3 .cata-isotope-filter ul li.selected a, body.cata-scheme-extra-color3 .cata-portfolio .cata-isotope-item:hover .cata-item-info .cata-cates a:hover, body.cata-scheme-extra-color3 .cata-portfolio .cata-love-counter .cata-love, body.cata-scheme-extra-color3 .cata-portfolio .cata-item-info .cata-cates, body.cata-scheme-extra-color3 .cata-portfolio .cata-item-info .cata-cates a, body.cata-scheme-extra-color3 .cata-project-detail .cata-project-info .project-info a:hover, body.cata-scheme-extra-color3 .cata-timeline-icon, body.cata-scheme-extra-color3 .cata-timeline-content .cata-date, body.cata-scheme-extra-color3 .cata-imagebox:hover .imagebox-wrap h6, body.cata-scheme-extra-color3 .cata-imagebox:hover .imagebox-wrap h6 a, body.cata-scheme-extra-color3 .cata-iconbox:hover .iconbox-wrap h6, body.cata-scheme-extra-color3 .cata-iconbox:hover .iconbox-wrap h6 a, body.cata-scheme-extra-color3 .cata-iconbox .icon, body.cata-scheme-extra-color3 .cata-pricetable .cata-icon, body.cata-scheme-extra-color3 .cata-twitter .cata-item:before, body.cata-scheme-extra-color3 .cata-twitter .tweet-content a, body.cata-scheme-extra-color3 .cata-twitter .cata-item .author-datetime a, body.cata-scheme-extra-color3 .cata-testimonial.cata-style6:not(.cata-color-text-light) .cata-item .cata-info em, body.cata-scheme-extra-color3 .cata-testimonial.cata-style6:not(.cata-color-text-light) .cata-item .cata-info .title, body.cata-scheme-extra-color3 .cata-double-slider .double-slider-nav a:hover, body.cata-scheme-extra-color3 .cata-slick-slider .slick-slider .slick-arrow:hover, body.cata-scheme-extra-color3 .slick-dots li.slick-active button:before, body.cata-scheme-extra-color3 .vc_tta.vc_general .vc_tta-tab>a:hover, body.cata-scheme-extra-color3 .vc_tta.vc_tta-tabs.cata-tabs.cata-style1 .vc_tta-tabs-list .vc_tta-tab .vc_tta-icon, body.cata-scheme-extra-color3 .vc_tta.vc_tta-tabs.cata-tabs.cata-style-icon .vc_tta-tabs-list .vc_tta-tab.vc_active>a, body.cata-scheme-extra-color3 .vc_tta.vc_tta-accordion.cata-accordion.cata-style2 .vc_tta-panel .vc_tta-panel-title>a .vc_tta-icon, body.cata-scheme-extra-color3 .vc_tta.vc_tta-tabs.cata-tabs.cata-style1 .vc_tta-tabs-list .vc_tta-tab.vc_active .vc_tta-title-text, body.cata-scheme-extra-color3 .vc_tta.vc_tta-tabs.cata-tour.cata-style1 .vc_tta-tabs-container .vc_tta-tab.vc_active>a, body.cata-scheme-extra-color3 .vc_tta.vc_tta-tabs.cata-tour.cata-style2 .vc_tta-tabs-container .vc_tta-tab.vc_active, body.cata-scheme-extra-color3 .cata-footer .widget_recent_comments li .comment-author-link, body.cata-scheme-extra-color3 .cata-footer .widget_recent_comments li .comment-author-link a, body.cata-scheme-extra-color3 .cata-footer .widget_tag_cloud .tagcloud a:hover, body.cata-scheme-extra-color3 .cata-footer .widget_recent_entries .post-date, body.cata-scheme-extra-color3 .cata-footer .cata-widget-tag-cloud .tagcloud a:hover, body.cata-scheme-extra-color3 .cata-footer .cata-widget-recent-posts .cata-info-detail > span, body.cata-scheme-extra-color3 .cata-footer .color-light a:hover, body.cata-scheme-extra-color3 .cata-footer .color-light .widget_tag_cloud .tagcloud a:hover, body.cata-scheme-extra-color3 .cata-footer .color-light .cata-widget-tag-cloud .tagcloud a:hover, body.cata-scheme-extra-color3 .cata-footer .color-light .widget_recent_entries a:hover, body.cata-scheme-extra-color3 .cata-footer .color-light .widget_archive li a:hover, body.cata-scheme-extra-color3 .cata-footer .color-light .widget_meta ul li a:hover, body.cata-scheme-extra-color3 .cata-footer .color-light .widget_nav_menu ul.menu > li a:hover, body.cata-scheme-extra-color3 .cata-footer .color-light .widget_nav_menu ul li.current_page_item > a, body.cata-scheme-extra-color3 .cata-footer .color-light .widget_pages ul li a:hover, body.cata-scheme-extra-color3 .cata-footer .color-light .widget_pages ul li.current_page_item > a, body.cata-scheme-extra-color3 .cata-footer .color-light .widget_categories li a:hover, body.cata-scheme-extra-color3 .cata-footer .color-light .widget_categories li.current-cat > a, body.cata-scheme-extra-color3 .cata-footer .color-light .widget_text ul.menu > li a:hover, body.cata-scheme-extra-color3 .cata-footer .color-light .widget_text ul.menu > li.current_page_item > a, body.cata-scheme-extra-color3 .cata-footer .color-light #wp-calendar tfoot td#prev a:hover, body.cata-scheme-extra-color3 .cata-footer .color-light #wp-calendar tfoot td#next a:hover, body.cata-scheme-extra-color3 .cata-footer .color-light .cata-widget-flickr a.cata-see-more:hover, body.cata-scheme-extra-color3 .cata-footer .color-light .cata-widget-instagram a.cata-see-more:hover, body.cata-scheme-extra-color3 .cata-footer .color-light .cata-widget-recent-posts .cata-entry-title a:hover, body.cata-scheme-extra-color3 .cata-footer .color-light .cata-widget-recent-comments .cata-item .cata-info > a:hover, body.cata-scheme-extra-color3 .cata-footer .color-light .cata-widget-twitter .cata-item:hover::before, body.cata-scheme-extra-color3 #mobile-nav .mobile-nav-icon-toggle .mobi-nav-btn, body.cata-scheme-extra-color3 .cata-header .catanis-main-menu > ul > li:hover > a, body.cata-scheme-extra-color3 .cata-header .catanis-main-menu > ul > li:focus > a, body.cata-scheme-extra-color3 .cata-header .catanis-main-menu > ul > li:active > a, body.cata-scheme-extra-color3 .cata-header .catanis-main-menu > ul > li.active > a, body.cata-scheme-extra-color3 .cata-header .catanis-main-menu > ul > li.current-menu-item > a, body.cata-scheme-extra-color3 .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li.active > a, body.cata-scheme-extra-color3 .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li.active > a, body.cata-scheme-extra-color3 .cata-header .catanis-main-menu ul ul li a:hover, body.cata-scheme-extra-color3 .cata-header .catanis-main-menu ul ul .current-menu-item > a, body.cata-scheme-extra-color3 .cata-header .catanis-main-menu ul ul .current-menu-parent > a, body.cata-scheme-extra-color3 .cata-header .catanis-main-menu ul ul .current-menu-ancestor > a, body.cata-scheme-extra-color3 .cata-header .catanis-main-menu li.mega-menu-item ul li[class^="ti-"]:hover:before, body.cata-scheme-extra-color3 .cata-header .catanis-main-menu li.mega-menu-item ul li[class^="fa-"]:hover:before, body.cata-scheme-extra-color3 .cata-header .catanis-main-menu ul ul li[class^="ti-"].current-menu-item:before, body.cata-scheme-extra-color3 .cata-header .catanis-main-menu ul ul li[class^="fa-"].current-menu-item:before, body.cata-scheme-extra-color3 .cata-header .catanis-main-menu li.mega-menu-item ul ul .current-menu-item > a, body.cata-scheme-extra-color3 .cata-header .catanis-main-menu li.mega-menu-item > ul .container > li > a:hover, body.cata-scheme-extra-color3 .cata-header .catanis-main-menu li.mega-menu-item ul ul li:hover a, body.cata-scheme-extra-color3 .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li:hover > a, body.cata-scheme-extra-color3 .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li:focus > a, body.cata-scheme-extra-color3 .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li:active > a, body.cata-scheme-extra-color3 .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li.current-menu-item >a {
+    color: #FFA080;
+}
+
+body.cata-scheme-extra-color3.single-post article.post .meta-tags a:hover, body.cata-scheme-extra-color3 input.button:hover, body.cata-scheme-extra-color3 a.button:hover, body.cata-scheme-extra-color3 input[type^=submit]:hover, body.cata-scheme-extra-color3 .catanis-loader-wraper.cata-style2 .heart:before, body.cata-scheme-extra-color3 .catanis-loader-wraper.cata-style2 .heart:after, body.cata-scheme-extra-color3 .mobi-nav-menu, body.cata-scheme-extra-color3 button.button:hover, body.cata-scheme-extra-color3 input.button:hover, body.cata-scheme-extra-color3 a.button:hover, body.cata-scheme-extra-color3 #quote-carousel .carousel-control:hover, body.cata-scheme-extra-color3 #quote-carousel .dots-indicators li.active, body.cata-scheme-extra-color3 .tp-bullets.custom .tp-bullet:hover, body.cata-scheme-extra-color3 .tp-bullets.custom .tp-bullet.selected, body.cata-scheme-extra-color3 .cata-dropcaps:not(.style-simple), body.cata-scheme-extra-color3 .cata-frsvp > a, body.cata-scheme-extra-color3 #wp-calendar tbody td#today, body.cata-scheme-extra-color3 #wp-calendar tbody td:not(.pad):hover, body.cata-scheme-extra-color3 .cata-related-post .dots-line .slick-dots li.slick-active button, body.cata-scheme-extra-color3 .cata-related-post .dots-square .slick-dots li.slick-active button, body.cata-scheme-extra-color3 .cata-related-post .dots-catanis-width .slick-dots li.slick-active button, body.cata-scheme-extra-color3 .cata-related-post .dots-catanis-height .slick-dots li.slick-active button, body.cata-scheme-extra-color3 .cata-post.cata-isotope .cata-blog-item.format-quote .item, body.cata-scheme-extra-color3 .cata-post.cata-isotope .cata-blog-item.format-link .item, body.cata-scheme-extra-color3 .catanis-loader-wraper.cata-style5 .bounce:before, body.cata-scheme-extra-color3 .dots-line .slick-dots li.slick-active button, body.cata-scheme-extra-color3 .dots-square .slick-dots li.slick-active button, body.cata-scheme-extra-color3 .dots-catanis-width .slick-dots li.slick-active button, body.cata-scheme-extra-color3 .dots-catanis-height .slick-dots li.slick-active button, body.cata-scheme-extra-color3 .cata-pagination-nextprev .newer-posts > a:hover, body.cata-scheme-extra-color3 .cata-pagination-nextprev .older-posts >a:hover, body.cata-scheme-extra-color3 .cata-gallery-imgs .cata-overlay .icon-circle, body.cata-scheme-extra-color3 .video-js .vjs-play-control, body.cata-scheme-extra-color3 .video-js .vjs-volume-level, body.cata-scheme-extra-color3 .video-js .vjs-play-progress, body.cata-scheme-extra-color3 .cata-music-toggle-btn, body.cata-scheme-extra-color3 .wp-playlist .mejs-container .mejs-controls, body.cata-scheme-extra-color3 .cata-contact-form.cata-color-light input[type="submit"]:hover, body.cata-scheme-extra-color3 .cata-audio-mp3 .mejs-controls .mejs-time-rail .mejs-time-loaded, body.cata-scheme-extra-color3 .cata-audio-mp3 .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current, body.cata-scheme-extra-color3 .cata-audio-mp3 .mejs-container .mejs-controls .mejs-fullscreen-button, body.cata-scheme-extra-color3 .cata-audio-mp3 .mejs-container .mejs-controls .mejs-playpause-button, body.cata-scheme-extra-color3 .cata-audio-mp3 .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current, body.cata-scheme-extra-color3 .cata-timeline-top:before, body.cata-scheme-extra-color3 .cata-timeline-bottom:before, body.cata-scheme-extra-color3 .cata-iconbox.cata-style3 .icon:hover, body.cata-scheme-extra-color3 .cata-single-image.effect-oval > div figure:after, body.cata-scheme-extra-color3 .cata-image-title.effect-slide-top > div figure figcaption, body.cata-scheme-extra-color3 .cata-team.cata-style1 .cata-team-center-slider .cata-item.slick-center .info, body.cata-scheme-extra-color3 .cata-widget-instagram .cata-insta-items a:before, body.cata-scheme-extra-color3 .cata-widget-flickr .cata-flickr-items a:before, body.cata-scheme-extra-color3 .widget_tag_cloud .tagcloud a:hover, body.cata-scheme-extra-color3 .cata-widget-tag-cloud .tagcloud a:hover, body.cata-scheme-extra-color3 .cata-widget-recent-posts .cata-thumb-none .cata-num, body.cata-scheme-extra-color3 .cata-widget-subscriptions .cata-subscribe.cata-style-background form button.button, body.cata-scheme-extra-color3 .vc_tta.vc_tta-accordion.cata-accordion.cata-style1 .vc_tta-panel .vc_tta-panel-title>a .vc_tta-icon {
+    background-color: #FFA080;
+}
+
+body.cata-scheme-extra-color4.error404 article h1, body.cata-scheme-extra-color4 a:hover, body.cata-scheme-extra-color4 .no-items, body.cata-scheme-extra-color4 .catanis-loader-wraper.cata-style3 .heart i, body.cata-scheme-extra-color4 .catanis-loader-wraper.cata-style3 .heart-reverse i, body.cata-scheme-extra-color4 .catanis-loader-wraper.cata-style1 .loader-heart, body.cata-scheme-extra-color4 .cata-backtotop .fa, body.cata-scheme-extra-color4 .cata-dropcaps.style-simple, body.cata-scheme-extra-color4 .gallery.gallery-size-large a:before, body.cata-scheme-extra-color4 .cata-blog-item .post-quote .top-icon, body.cata-scheme-extra-color4 .cata-blog-item .post-link .top-icon, body.cata-scheme-extra-color4 .cata-blog-item .entry-meta li.meta-seperate:before, body.cata-scheme-extra-color4 .cata-blog-item .entry-meta li a:hover, body.cata-scheme-extra-color4 .cata-blog-item .entry-meta li.meta-love .fa, body.cata-scheme-extra-color4 .cata-blog-item .entry-meta li.meta-comments .fa, body.cata-scheme-extra-color4 .cata-blog-item .entry-meta li.meta-featured-post, body.cata-scheme-extra-color4 .cata-blog-item .item .tags-links a:hover, body.cata-scheme-extra-color4 .cata-blog-item .item .tags-links .fa, body.cata-scheme-extra-color4 .cata-blog-item .cata-blog-item-title .sticky, body.cata-scheme-extra-color4 .cata-related-post .dots-rounded .slick-dots li.slick-active button:before, body.cata-scheme-extra-color4 .cata-related-post .cata-item .entry-meta li.meta-date, body.cata-scheme-extra-color4 .cata-blog-item .cata-blog-item-excerpt a.read-more, body.cata-scheme-extra-color4 .cata-comments-area ol.commentlist li .meta-datetime, body.cata-scheme-extra-color4 .cata-comments-area ol.commentlist li div.reply a, body.cata-scheme-extra-color4 #comments ol.commentlist li.comment p.comment-awaiting-moderation, body.cata-scheme-extra-color4 .single-post article.post .item .entry-content .wrap-entry-content a, body.cata-scheme-extra-color4 .widget_meta ul li:before, body.cata-scheme-extra-color4 .widget-container ul.menu > li.current-menu-item > a, body.cata-scheme-extra-color4 #wp-calendar tbody td >a, body.cata-scheme-extra-color4 .cata-widget-twitter .cata-item:before, body.cata-scheme-extra-color4 .cata-widget-twitter .tweet-content a, body.cata-scheme-extra-color4 .cata-widget-twitter .cata-item .author-datetime a, body.cata-scheme-extra-color4 .cata-widget-recent-comments .cata-item .cata-info > a:hover, body.cata-scheme-extra-color4 .cata-widget-subscriptions .cata-subscribe button.button:hover, body.cata-scheme-extra-color4 .cata-widget-testimonials .cata-item .cata-title-occupation a, body.cata-scheme-extra-color4 .catanis-main-menu > ul > li > a::before, body.cata-scheme-extra-color4 .cata-isotope-filter ul li:after, body.cata-scheme-extra-color4 .cata-isotope-filter ul li:hover a, body.cata-scheme-extra-color4 .cata-isotope-filter ul li.selected a, body.cata-scheme-extra-color4 .cata-portfolio .cata-isotope-item:hover .cata-item-info .cata-cates a:hover, body.cata-scheme-extra-color4 .cata-portfolio .cata-love-counter .cata-love, body.cata-scheme-extra-color4 .cata-portfolio .cata-item-info .cata-cates, body.cata-scheme-extra-color4 .cata-portfolio .cata-item-info .cata-cates a, body.cata-scheme-extra-color4 .cata-project-detail .cata-project-info .project-info a:hover, body.cata-scheme-extra-color4 .cata-timeline-icon, body.cata-scheme-extra-color4 .cata-timeline-content .cata-date, body.cata-scheme-extra-color4 .cata-imagebox:hover .imagebox-wrap h6, body.cata-scheme-extra-color4 .cata-imagebox:hover .imagebox-wrap h6 a, body.cata-scheme-extra-color4 .cata-iconbox:hover .iconbox-wrap h6, body.cata-scheme-extra-color4 .cata-iconbox:hover .iconbox-wrap h6 a, body.cata-scheme-extra-color4 .cata-iconbox .icon, body.cata-scheme-extra-color4 .cata-pricetable .cata-icon, body.cata-scheme-extra-color4 .cata-twitter .cata-item:before, body.cata-scheme-extra-color4 .cata-twitter .tweet-content a, body.cata-scheme-extra-color4 .cata-twitter .cata-item .author-datetime a, body.cata-scheme-extra-color4 .cata-testimonial.cata-style6:not(.cata-color-text-light) .cata-item .cata-info em, body.cata-scheme-extra-color4 .cata-testimonial.cata-style6:not(.cata-color-text-light) .cata-item .cata-info .title, body.cata-scheme-extra-color4 .cata-double-slider .double-slider-nav a:hover, body.cata-scheme-extra-color4 .cata-slick-slider .slick-slider .slick-arrow:hover, body.cata-scheme-extra-color4 .slick-dots li.slick-active button:before, body.cata-scheme-extra-color4 .vc_tta.vc_general .vc_tta-tab>a:hover, body.cata-scheme-extra-color4 .vc_tta.vc_tta-tabs.cata-tabs.cata-style1 .vc_tta-tabs-list .vc_tta-tab .vc_tta-icon, body.cata-scheme-extra-color4 .vc_tta.vc_tta-tabs.cata-tabs.cata-style-icon .vc_tta-tabs-list .vc_tta-tab.vc_active>a, body.cata-scheme-extra-color4 .vc_tta.vc_tta-accordion.cata-accordion.cata-style2 .vc_tta-panel .vc_tta-panel-title>a .vc_tta-icon, body.cata-scheme-extra-color4 .vc_tta.vc_tta-tabs.cata-tabs.cata-style1 .vc_tta-tabs-list .vc_tta-tab.vc_active .vc_tta-title-text, body.cata-scheme-extra-color4 .vc_tta.vc_tta-tabs.cata-tour.cata-style1 .vc_tta-tabs-container .vc_tta-tab.vc_active>a, body.cata-scheme-extra-color4 .vc_tta.vc_tta-tabs.cata-tour.cata-style2 .vc_tta-tabs-container .vc_tta-tab.vc_active, body.cata-scheme-extra-color4 .cata-footer .widget_recent_comments li .comment-author-link, body.cata-scheme-extra-color4 .cata-footer .widget_recent_comments li .comment-author-link a, body.cata-scheme-extra-color4 .cata-footer .widget_tag_cloud .tagcloud a:hover, body.cata-scheme-extra-color4 .cata-footer .widget_recent_entries .post-date, body.cata-scheme-extra-color4 .cata-footer .cata-widget-tag-cloud .tagcloud a:hover, body.cata-scheme-extra-color4 .cata-footer .cata-widget-recent-posts .cata-info-detail > span, body.cata-scheme-extra-color4 .cata-footer .color-light a:hover, body.cata-scheme-extra-color4 .cata-footer .color-light .widget_tag_cloud .tagcloud a:hover, body.cata-scheme-extra-color4 .cata-footer .color-light .cata-widget-tag-cloud .tagcloud a:hover, body.cata-scheme-extra-color4 .cata-footer .color-light .widget_recent_entries a:hover, body.cata-scheme-extra-color4 .cata-footer .color-light .widget_archive li a:hover, body.cata-scheme-extra-color4 .cata-footer .color-light .widget_meta ul li a:hover, body.cata-scheme-extra-color4 .cata-footer .color-light .widget_nav_menu ul.menu > li a:hover, body.cata-scheme-extra-color4 .cata-footer .color-light .widget_nav_menu ul li.current_page_item > a, body.cata-scheme-extra-color4 .cata-footer .color-light .widget_pages ul li a:hover, body.cata-scheme-extra-color4 .cata-footer .color-light .widget_pages ul li.current_page_item > a, body.cata-scheme-extra-color4 .cata-footer .color-light .widget_categories li a:hover, body.cata-scheme-extra-color4 .cata-footer .color-light .widget_categories li.current-cat > a, body.cata-scheme-extra-color4 .cata-footer .color-light .widget_text ul.menu > li a:hover, body.cata-scheme-extra-color4 .cata-footer .color-light .widget_text ul.menu > li.current_page_item > a, body.cata-scheme-extra-color4 .cata-footer .color-light #wp-calendar tfoot td#prev a:hover, body.cata-scheme-extra-color4 .cata-footer .color-light #wp-calendar tfoot td#next a:hover, body.cata-scheme-extra-color4 .cata-footer .color-light .cata-widget-flickr a.cata-see-more:hover, body.cata-scheme-extra-color4 .cata-footer .color-light .cata-widget-instagram a.cata-see-more:hover, body.cata-scheme-extra-color4 .cata-footer .color-light .cata-widget-recent-posts .cata-entry-title a:hover, body.cata-scheme-extra-color4 .cata-footer .color-light .cata-widget-recent-comments .cata-item .cata-info > a:hover, body.cata-scheme-extra-color4 .cata-footer .color-light .cata-widget-twitter .cata-item:hover::before, body.cata-scheme-extra-color4 #mobile-nav .mobile-nav-icon-toggle .mobi-nav-btn, body.cata-scheme-extra-color4 .cata-header .catanis-main-menu > ul > li:hover > a, body.cata-scheme-extra-color4 .cata-header .catanis-main-menu > ul > li:focus > a, body.cata-scheme-extra-color4 .cata-header .catanis-main-menu > ul > li:active > a, body.cata-scheme-extra-color4 .cata-header .catanis-main-menu > ul > li.active > a, body.cata-scheme-extra-color4 .cata-header .catanis-main-menu > ul > li.current-menu-item > a, body.cata-scheme-extra-color4 .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li.active > a, body.cata-scheme-extra-color4 .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li.active > a, body.cata-scheme-extra-color4 .cata-header .catanis-main-menu ul ul li a:hover, body.cata-scheme-extra-color4 .cata-header .catanis-main-menu ul ul .current-menu-item > a, body.cata-scheme-extra-color4 .cata-header .catanis-main-menu ul ul .current-menu-parent > a, body.cata-scheme-extra-color4 .cata-header .catanis-main-menu ul ul .current-menu-ancestor > a, body.cata-scheme-extra-color4 .cata-header .catanis-main-menu li.mega-menu-item ul li[class^="ti-"]:hover:before, body.cata-scheme-extra-color4 .cata-header .catanis-main-menu li.mega-menu-item ul li[class^="fa-"]:hover:before, body.cata-scheme-extra-color4 .cata-header .catanis-main-menu ul ul li[class^="ti-"].current-menu-item:before, body.cata-scheme-extra-color4 .cata-header .catanis-main-menu ul ul li[class^="fa-"].current-menu-item:before, body.cata-scheme-extra-color4 .cata-header .catanis-main-menu li.mega-menu-item ul ul .current-menu-item > a, body.cata-scheme-extra-color4 .cata-header .catanis-main-menu li.mega-menu-item > ul .container > li > a:hover, body.cata-scheme-extra-color4 .cata-header .catanis-main-menu li.mega-menu-item ul ul li:hover a, body.cata-scheme-extra-color4 .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li:hover > a, body.cata-scheme-extra-color4 .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li:focus > a, body.cata-scheme-extra-color4 .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li:active > a, body.cata-scheme-extra-color4 .sticky-wrapper.is-sticky .cata-header .catanis-main-menu > ul > li.current-menu-item >a {
+    color: #C09CC0;
+}
+
+body.cata-scheme-extra-color4.single-post article.post .meta-tags a:hover, body.cata-scheme-extra-color4 input.button:hover, body.cata-scheme-extra-color4 a.button:hover, body.cata-scheme-extra-color4 input[type^=submit]:hover, body.cata-scheme-extra-color4 .catanis-loader-wraper.cata-style2 .heart:before, body.cata-scheme-extra-color4 .catanis-loader-wraper.cata-style2 .heart:after, body.cata-scheme-extra-color4 .mobi-nav-menu, body.cata-scheme-extra-color4 button.button:hover, body.cata-scheme-extra-color4 input.button:hover, body.cata-scheme-extra-color4 a.button:hover, body.cata-scheme-extra-color4 #quote-carousel .carousel-control:hover, body.cata-scheme-extra-color4 #quote-carousel .dots-indicators li.active, body.cata-scheme-extra-color4 .tp-bullets.custom .tp-bullet:hover, body.cata-scheme-extra-color4 .tp-bullets.custom .tp-bullet.selected, body.cata-scheme-extra-color4 .cata-dropcaps:not(.style-simple), body.cata-scheme-extra-color4 .cata-frsvp > a, body.cata-scheme-extra-color4 #wp-calendar tbody td#today, body.cata-scheme-extra-color4 #wp-calendar tbody td:not(.pad):hover, body.cata-scheme-extra-color4 .cata-related-post .dots-line .slick-dots li.slick-active button, body.cata-scheme-extra-color4 .cata-related-post .dots-square .slick-dots li.slick-active button, body.cata-scheme-extra-color4 .cata-related-post .dots-catanis-width .slick-dots li.slick-active button, body.cata-scheme-extra-color4 .cata-related-post .dots-catanis-height .slick-dots li.slick-active button, body.cata-scheme-extra-color4 .cata-post.cata-isotope .cata-blog-item.format-quote .item, body.cata-scheme-extra-color4 .cata-post.cata-isotope .cata-blog-item.format-link .item, body.cata-scheme-extra-color4 .catanis-loader-wraper.cata-style5 .bounce:before, body.cata-scheme-extra-color4 .dots-line .slick-dots li.slick-active button, body.cata-scheme-extra-color4 .dots-square .slick-dots li.slick-active button, body.cata-scheme-extra-color4 .dots-catanis-width .slick-dots li.slick-active button, body.cata-scheme-extra-color4 .dots-catanis-height .slick-dots li.slick-active button, body.cata-scheme-extra-color4 .cata-pagination-nextprev .newer-posts > a:hover, body.cata-scheme-extra-color4 .cata-pagination-nextprev .older-posts >a:hover, body.cata-scheme-extra-color4 .cata-gallery-imgs .cata-overlay .icon-circle, body.cata-scheme-extra-color4 .video-js .vjs-play-control, body.cata-scheme-extra-color4 .video-js .vjs-volume-level, body.cata-scheme-extra-color4 .video-js .vjs-play-progress, body.cata-scheme-extra-color4 .cata-music-toggle-btn, body.cata-scheme-extra-color4 .wp-playlist .mejs-container .mejs-controls, body.cata-scheme-extra-color4 .cata-contact-form.cata-color-light input[type="submit"]:hover, body.cata-scheme-extra-color4 .cata-audio-mp3 .mejs-controls .mejs-time-rail .mejs-time-loaded, body.cata-scheme-extra-color4 .cata-audio-mp3 .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current, body.cata-scheme-extra-color4 .cata-audio-mp3 .mejs-container .mejs-controls .mejs-fullscreen-button, body.cata-scheme-extra-color4 .cata-audio-mp3 .mejs-container .mejs-controls .mejs-playpause-button, body.cata-scheme-extra-color4 .cata-audio-mp3 .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current, body.cata-scheme-extra-color4 .cata-timeline-top:before, body.cata-scheme-extra-color4 .cata-timeline-bottom:before, body.cata-scheme-extra-color4 .cata-iconbox.cata-style3 .icon:hover, body.cata-scheme-extra-color4 .cata-single-image.effect-oval > div figure:after, body.cata-scheme-extra-color4 .cata-image-title.effect-slide-top > div figure figcaption, body.cata-scheme-extra-color4 .cata-team.cata-style1 .cata-team-center-slider .cata-item.slick-center .info, body.cata-scheme-extra-color4 .cata-widget-instagram .cata-insta-items a:before, body.cata-scheme-extra-color4 .cata-widget-flickr .cata-flickr-items a:before, body.cata-scheme-extra-color4 .widget_tag_cloud .tagcloud a:hover, body.cata-scheme-extra-color4 .cata-widget-tag-cloud .tagcloud a:hover, body.cata-scheme-extra-color4 .cata-widget-recent-posts .cata-thumb-none .cata-num, body.cata-scheme-extra-color4 .cata-widget-subscriptions .cata-subscribe.cata-style-background form button.button, body.cata-scheme-extra-color4 .vc_tta.vc_tta-accordion.cata-accordion.cata-style1 .vc_tta-panel .vc_tta-panel-title>a .vc_tta-icon {
+    background-color: #C09CC0;
+}
+
+body.cata-scheme-main-color .cata-iconbox.cata-style3 .icon, body.cata-scheme-main-color .cata-timeline .cata-item .cata-timeline-content:hover, body.cata-scheme-main-color .cata-timeline .cata-timeline-icon, body.cata-scheme-main-color .cata-timeline .cata-content-wrapper::before {
+    background-color: #f7f7f7;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+    body.cata-scheme-main-color .cata-item:nth-child(odd) .cata-timeline-content:hover:after {
+        border-right-color:#f7f7f7;
+    }
+}
+
+body.cata-scheme-extra-color1 .cata-iconbox.cata-style3 .icon, body.cata-scheme-extra-color1 .cata-timeline .cata-item .cata-timeline-content:hover, body.cata-scheme-extra-color1 .cata-timeline .cata-timeline-icon, body.cata-scheme-extra-color1 .cata-timeline .cata-content-wrapper::before {
+    background-color: #fff7f7;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+    body.cata-scheme-extra-color1 .cata-item:nth-child(odd) .cata-timeline-content:hover:after {
+        border-right-color:#fff7f7;
+    }
+}
+
+body.cata-scheme-extra-color2 .cata-iconbox.cata-style3 .icon, body.cata-scheme-extra-color2 .cata-timeline .cata-item .cata-timeline-content:hover, body.cata-scheme-extra-color2 .cata-timeline .cata-timeline-icon, body.cata-scheme-extra-color2 .cata-timeline .cata-content-wrapper::before {
+    background-color: #d6c9cb;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+    body.cata-scheme-extra-color2 .cata-item:nth-child(odd) .cata-timeline-content:hover:after {
+        border-right-color:#d6c9cb;
+    }
+}
+
+body.cata-scheme-extra-color3 .cata-iconbox.cata-style3 .icon, body.cata-scheme-extra-color3 .cata-timeline .cata-item .cata-timeline-content:hover, body.cata-scheme-extra-color3 .cata-timeline .cata-timeline-icon, body.cata-scheme-extra-color3 .cata-timeline .cata-content-wrapper::before {
+    background-color: #f7f2e8;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+    body.cata-scheme-extra-color3 .cata-item:nth-child(odd) .cata-timeline-content:hover:after {
+        border-right-color:#f7f2e8;
+    }
+}
+
+body.cata-scheme-extra-color4 .cata-iconbox.cata-style3 .icon, body.cata-scheme-extra-color4 .cata-timeline .cata-item .cata-timeline-content:hover, body.cata-scheme-extra-color4 .cata-timeline .cata-timeline-icon, body.cata-scheme-extra-color4 .cata-timeline .cata-content-wrapper::before {
+    background-color: #f2f2f8;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+    body.cata-scheme-extra-color4 .cata-item:nth-child(odd) .cata-timeline-content:hover:after {
+        border-right-color:#f2f2f8;
+    }
+}
+
+body.cata-scheme-main-color .cata-widget-subscriptions .cata-subscribe form input.subscribe_email, body.cata-scheme-main-color .cata-timeline .cata-item .cata-timeline-content:hover, body.cata-scheme-main-color .cata-timeline-top:before, body.cata-scheme-main-color .cata-timeline-bottom:before {
+    border-color: #f7f7f7;
+}
+
+body.cata-scheme-extra-color1 .cata-widget-subscriptions .cata-subscribe form input.subscribe_email, body.cata-scheme-extra-color1 .cata-timeline .cata-item .cata-timeline-content:hover, body.cata-scheme-extra-color1 .cata-timeline-top:before, body.cata-scheme-extra-color1 .cata-timeline-bottom:before {
+    border-color: #fff7f7;
+}
+
+body.cata-scheme-extra-color2 .cata-widget-subscriptions .cata-subscribe form input.subscribe_email, body.cata-scheme-extra-color2 .cata-timeline .cata-item .cata-timeline-content:hover, body.cata-scheme-extra-color2 .cata-timeline-top:before, body.cata-scheme-extra-color2 .cata-timeline-bottom:before {
+    border-color: #d6c9cb;
+}
+
+body.cata-scheme-extra-color3 .cata-widget-subscriptions .cata-subscribe form input.subscribe_email, body.cata-scheme-extra-color3 .cata-timeline .cata-item .cata-timeline-content:hover, body.cata-scheme-extra-color3 .cata-timeline-top:before, body.cata-scheme-extra-color3 .cata-timeline-bottom:before {
+    border-color: #f7f2e8;
+}
+
+body.cata-scheme-extra-color4 .cata-widget-subscriptions .cata-subscribe form input.subscribe_email, body.cata-scheme-extra-color4 .cata-timeline .cata-item .cata-timeline-content:hover, body.cata-scheme-extra-color4 .cata-timeline-top:before, body.cata-scheme-extra-color4 .cata-timeline-bottom:before {
+    border-color: #f2f2f8;
+}
+
+body.cata-scheme-main-color.rtl .cata-item:nth-child(even) .cata-timeline-content:hover:after, body.cata-scheme-main-color .cata-item:nth-child(odd) .cata-timeline-content:hover:after {
+    border-left-color: #f7f7f7;
+}
+
+body.cata-scheme-extra-color1.rtl .cata-item:nth-child(even) .cata-timeline-content:hover:after, body.cata-scheme-extra-color1 .cata-item:nth-child(odd) .cata-timeline-content:hover:after {
+    border-left-color: #fff7f7;
+}
+
+body.cata-scheme-extra-color2.rtl .cata-item:nth-child(even) .cata-timeline-content:hover:after, body.cata-scheme-extra-color2 .cata-item:nth-child(odd) .cata-timeline-content:hover:after {
+    border-left-color: #d6c9cb;
+}
+
+body.cata-scheme-extra-color3.rtl .cata-item:nth-child(even) .cata-timeline-content:hover:after, body.cata-scheme-extra-color3 .cata-item:nth-child(odd) .cata-timeline-content:hover:after {
+    border-left-color: #f7f2e8;
+}
+
+body.cata-scheme-extra-color4.rtl .cata-item:nth-child(even) .cata-timeline-content:hover:after, body.cata-scheme-extra-color4 .cata-item:nth-child(odd) .cata-timeline-content:hover:after {
+    border-left-color: #f2f2f8;
+}
+
+body.cata-scheme-main-color.rtl .cata-item:nth-child(odd) .cata-timeline-content:hover:after, body.cata-scheme-main-color .cata-item:nth-child(even) .cata-timeline-content:hover:after {
+    border-right-color: #f7f7f7;
+}
+
+body.cata-scheme-extra-color1.rtl .cata-item:nth-child(odd) .cata-timeline-content:hover:after, body.cata-scheme-extra-color1 .cata-item:nth-child(even) .cata-timeline-content:hover:after {
+    border-right-color: #fff7f7;
+}
+
+body.cata-scheme-extra-color2.rtl .cata-item:nth-child(odd) .cata-timeline-content:hover:after, body.cata-scheme-extra-color2 .cata-item:nth-child(even) .cata-timeline-content:hover:after {
+    border-right-color: #d6c9cb;
+}
+
+body.cata-scheme-extra-color3.rtl .cata-item:nth-child(odd) .cata-timeline-content:hover:after, body.cata-scheme-extra-color3 .cata-item:nth-child(even) .cata-timeline-content:hover:after {
+    border-right-color: #f7f2e8;
+}
+
+body.cata-scheme-extra-color4.rtl .cata-item:nth-child(odd) .cata-timeline-content:hover:after, body.cata-scheme-extra-color4 .cata-item:nth-child(even) .cata-timeline-content:hover:after {
+    border-right-color: #f2f2f8;
+}

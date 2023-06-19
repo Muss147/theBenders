@@ -1,0 +1,355 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Invitation{% endblock %}
+
+{% block body %}
+    <!-- ============ CAROUSEL ============ -->
+    <section class="carousel">
+        <div class="carousel__container">
+            <div class="carousel_elm">
+                <div class="carousel__img" style="background-image: url({{asset('assets/media/carousel_1.jpg')}}); background-size: cover; background-position: center center; width: 100%; height: 100vh; opacity: 1; visibility: inherit; z-index: 20;">
+                    <div class="carousel__content">
+                        <img class="carousel__line-top" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/04/line_top.png" alt="" width="220" height="35">
+                        <div class="carousel__text">
+                            <h1 class="carousel__title">Vanessa & Emmanuel</h1>
+                            <span class="carousel__sub-title">se disent Ouiii !!</span>
+                        </div>
+                        <img class="carousel__line-top" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/04/line_top.png" alt="" width="220" height="35">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============ COUNTDOWN ============ -->
+    <section class="cata-countdown section mt-5">
+        <h2 class="section__title">Le 20 Juin 2023</h2>
+        <span class="section__subtitle">La baie des sirènes</span>
+
+        <div class="cata-countdown-content is-countdown" data-date="2023/06/20/">
+            <span class="countdown-row">
+                <span class="countdown-section">
+                    <span class="countdown-amount">00</span>
+                    <span class="countdown-period">Jours</span>
+                </span>
+                <span class="countdown-section">
+                    <span class="countdown-amount">00</span>
+                    <span class="countdown-period">Heures</span>
+                </span>
+                <span class="countdown-section">
+                    <span class="countdown-amount">00</span>
+                    <span class="countdown-period">Minutes</span>
+                </span>
+            </span>
+        </div>
+    </section>
+
+    <!-- ============ INVIT LETTER ============ -->
+    <section id="hello" class="invit__letter py-5">
+        <div class="container position-relative bg-white text-dark rounded shadow w-100 w-md-75 w-lg-50 mx-2 mx-md-auto my-5 p-5">
+            <h2 class="section__title">Hello chers tous,</h2>
+            <p>Grande nouvelle, ça y est nous avons décidé de sauter le pas !!! 
+            <br>Nous nous marions, Yeaaah !</p>
+
+            <p>Mais cette grande étape de nos vies ne serait pas la même sans votre présence à nos côtés ! Oui c’est avec vous que nous souhaiterions partager ce bonheur !
+            Venez suivez-nous, nous vous emmenons au cœur d’un des beaux sites de notre chère Côte d’ivoire. La baie des sirènes à Grand Bereby !<br>
+            En attendant le jour J, nous avons créé ce site pour </p>
+            <ul style="list-style-type: disc;">
+                <li>Vous communiquer les déférentes informations en lien avec les cérémonies</li>
+                <li>Que vous puissiez confirmer votre présence (obligatoire) avant le 31/07/2023 (ceci nous permettra de nous organiser une fois que nous aurons la liste définitive des invités)</li>
+                <li>Que les personnes venant de l'étranger aient toutes les informations nécessaires à l'organisation de leur séjour.</li>
+            </ul>
+
+            <p>Pour toute(s) information(s) complémentaire(s), nous vous invitons à contacter notre Wedding Planner, Freeda sur WhatsApp: +225 07 77 86 77 86</p>
+            <p>Bonne navigation et à très vite !</p>
+            <p>Vanessa et Emmanuel</p>
+
+
+            <div class="flower__separate text-center">
+                <img src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/04/green-flower.png" alt="Texture top">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ TIMELINE ============ -->
+    <section id="hotels" class="section cata-section-container-stretch" id="ourstory" style="padding-top:100px; padding-bottom:100px; margin-bottom:0;">
+        <div class="container m-auto">
+            <div class="row cata-columns-gap-30">
+                <div class="cata-column wpb_column vc_column_container col-xs-mobile-fullwidth col-sm-12" id="column_uvqnn3qd6q">
+                    <div class="cata-column-wrapper vc-column-innner-wrapper">
+                        <h2 id="title_w9s1u" class="headin`ù=g-title style2 text-center has-animation animated fadeInUp section__title" data-animation-type="fadeInUp" data-animation-duration="700" data-animation-delay="200" style="animation-duration: 700ms; animation-delay: 200ms;">
+                            <span>Hôtels sur Grand-Bereby</span>
+                        </h2>
+                        <div id="cata_empty_space_vw9wc" class="cata-empty-space cata-element" style="height: 50px"></div>
+                        <div id="cata_timeline_28s2r9qegj" class="cata-timeline clearfix cata-style3"> 
+                            <div class="cata-timeline-top"></div>
+                            <div class="cata-content-wrapper"> 
+                                <div class="cata-item has-animation animated fadeInUp" data-animation-type="fadeInUp" data-animation-duration="700" data-animation-delay="0" style="animation-duration: 700ms;"> 
+                                    <div class="cata-timeline-icon"> 
+                                        <i class='bx bx-hotel'></i>
+                                    </div>
+                                    <div class="cata-timeline-content"> 
+                                        <div class="image-wrap">
+                                            <div id="cata_single_image_ik98ko8q0p" class="cata-single-image cata-element img-center effect-zoomin"> 
+                                                <div>
+                                                    <figure> 
+                                                        <img width="570" height="360" src="{{asset('assets/media/timeline/grd-bereby.png')}}" class="cata-image-img attachment-full rounded shadow" alt="" loading="lazy"> 
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content-wrap">
+                                            <h4>La baie des sirènes</h4>
+                                            <span class="cata-date">(lieu de la cérémonie)</span>
+                                            <p class="cata-desc bg-white p-3 rounded text-dark">Contact : Mr Pokou
+                                            <br>Site : <a href="https://www.baiedessirenes.com">https://www.baiedessirenes.com</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cata-item has-animation animated fadeInUp" data-animation-type="fadeInUp" data-animation-duration="700" data-animation-delay="0" style="animation-duration: 700ms;"> 
+                                    <div class="cata-timeline-icon"> 
+                                        <i class='bx bx-hotel'></i>
+                                    </div>
+                                    <div class="cata-timeline-content"> 
+                                        <div class="image-wrap">
+                                            <div id="cata_single_image_prvio0hyjv" class="cata-single-image cata-element img-center effect-zoomin"> 
+                                                <div>
+                                                    <figure> 
+                                                        <img width="570" height="360" src="{{asset('assets/media/timeline/hotel-kotoum.png')}}" class="cata-image-img attachment-full rounded shadow" alt="" loading="lazy"> 
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content-wrap">
+                                            <h4>Hotel le Katoum</h4>
+                                            <span class="cata-date">(situé à quelques mètres de la baie des sirènes)</span>
+                                            <p class="cata-desc bg-white p-3 rounded text-dark">Navette disponible entre les deux hotels
+                                            <br>site : <a href="https://www.lekatoum.com/fr/index.html">https://www.lekatoum.com/fr/index.html</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cata-item has-animation animated fadeInUp" data-animation-type="fadeInUp" data-animation-duration="700" data-animation-delay="0" style="animation-duration: 700ms;"> 
+                                    <div class="cata-timeline-icon"> 
+                                        <i class='bx bx-hotel'></i>
+                                    </div>
+                                    <div class="cata-timeline-content"> 
+                                        <div class="image-wrap">
+                                            <div id="cata_single_image_fgnbdtjpoz" class="cata-single-image cata-element img-center effect-zoomin"> 
+                                                <div>
+                                                    <figure> 
+                                                        <img width="570" height="360" src="{{asset('assets/media/timeline/hotel-canelle.png')}}" class="cata-image-img attachment-full rounded shadow" alt="" loading="lazy"> 
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content-wrap">
+                                            <h4>Hotel cannelle</h4>
+                                            <span class="cata-date"></span>
+                                            <p class="cata-desc bg-white p-3 rounded text-dark">Adresse : Quartier de la Corniche Boulevard Houphouët-Boigny , San Pedro
+                                            <br>Contact :
+                                            <br>Site</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cata-item has-animation animated fadeInUp" data-animation-type="fadeInUp" data-animation-duration="700" data-animation-delay="0" style="animation-duration: 700ms;"> 
+                                    <div class="cata-timeline-icon"> 
+                                        <i class='bx bx-hotel'></i>
+                                    </div>
+                                    <div class="cata-timeline-content"> 
+                                        <div class="image-wrap">
+                                            <div id="cata_single_image_kd6jiijwwh" class="cata-single-image cata-element img-center effect-sparkle"> 
+                                                <div>
+                                                    <figure> 
+                                                        <img width="570" height="361" src="{{asset('assets/media/timeline/enotel-beach.png')}}" class="cata-image-img attachment-full rounded shadow" alt="" loading="lazy">
+                                                        <span class="cata-effect cata-effect-sparkle"></span> 
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content-wrap">
+                                            <h4>Enotel beach</h4>
+                                            <span class="cata-date"></span>
+                                            <p class="cata-desc bg-white p-3 rounded text-dark">Adresse : Boulevard Houphouët-Boigny, san pedro
+                                            <br>Site : <a href="https://groupenotel.com/">https://groupenotel.com/</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cata-timeline-bottom"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="que-faire" class="my-5">
+        <div class="container text-center">
+            <h2 class="section__title">Que faire à la baie des sirènes</h2>
+            <p>Bienvenue à la baie des sirènes 
+            <br>une oasis de tranquillité</p>
+            <div class="row mt-5">
+                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                    <div class="d-grid border border-light rounded h-100 p-3 p-md-4 p-lg-5">
+                        <i class='bx bx-water fs-1'></i>
+                        <strong class="text-uppercase mt-4">Base Nautique</strong>
+                        <p class="m-0">Vivez toutes les sensations de la mer ! 
+                        <br>surf, paddle, pédalos, kayak, body board, découverte...</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                    <div class="d-grid border border-light rounded h-100 p-3 p-md-4 p-lg-5">
+                        <i class='bx bx-swim fs-1'></i>
+                        <strong class="text-uppercase mt-4">Piscine et Plage</strong>
+                        <p class="m-0">Vivez toutes les sensations de la mer ! 
+                        <br>surf, paddle, pédalos, kayak, body board, découverte...</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                    <div class="d-grid border border-light rounded h-100 p-3 p-md-4 p-lg-5">
+                        <i class='bx bxs-tennis-ball fs-1'></i>
+                        <strong class="text-uppercase mt-4">Terrains de tennis, volley etc.</strong>
+                        <p class="m-0">badminton, ping-pong, beach soccer, Mini-golf, pétanque, krou men (jeu de quilles traditionnel en bois sur la plage), tir à l’arc adulte et junior, vélos VTT, Tyrolienne...</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                    <div class="d-grid border border-light rounded h-100 p-3 p-md-4 p-lg-5">
+                        <i class='bx bxs-baby-carriage fs-1'></i>
+                        <strong class="text-uppercase mt-4">Pour Les Enfants</strong>
+                        <p class="m-0">Des jeux d’extérieurs sont installés à l’ombre, en arrière plage avec toboggan, maisonnettes d’escalade, balançoires. Divers jeux géants. 
+                        <br><strong>Un service de nounous est possible sur demande (A la réception).</strong></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                    <div class="d-grid border border-light rounded h-100 p-3 p-md-4 p-lg-5">
+                        <i class='bx bx-walk fs-1'></i>
+                        <strong class="text-uppercase mt-4">Balades Découvertes</strong>
+                        <p class="m-0">Parcours de santé et balades découverte dans la colline aux Civettes (promenade de 45 mn qui vous conduira dans une forêt naturelle où la végétation a repris ses droits. Avant de rentrer arrêtez-vous sur la plateforme en surplomb, pour une vue magnifique de l’hôtel.
+                        <br>Pour les sportifs, c’est certainement un bon départ pour le jogging !</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                    <div class="d-grid border border-light rounded h-100 p-3 p-md-4 p-lg-5">
+                        <i class='bx bx-coin-stack fs-1'></i>
+                        <strong class="text-uppercase mt-4">Excursions payantes</strong>
+                        <p class="m-0">se renseigner à la réception – selon les conditions météo et les marées.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                    <div class="d-grid border border-light rounded h-100 p-3 p-md-4 p-lg-5">
+                        <i class='bx bx-car fs-1'></i>
+                        <strong class="text-uppercase mt-4">Les Voiturettes</strong>
+                        <p class="m-0">Dans le souci de préserver la quiétude de nos hôtes, des voiturettes vous accompagnent au parking à la réception et jusqu’à votre chambre lors de votre arrivée. Il en va de même le jour du départ sur simple demande à la réception.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                    <div class="d-grid border border-light rounded h-100 p-3 p-md-4 p-lg-5">
+                        <i class='bx bxs-tree-alt fs-1'></i>
+                        <strong class="text-uppercase mt-4">Centre équestre</strong>
+                        <p class="m-0">Balade Sportive – excursion payante. Découverte et initiation</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                    <div class="d-grid border border-light rounded h-100 p-3 p-md-4 p-lg-5">
+                        <i class='bx bx-spa fs-1'></i>
+                        <strong class="text-uppercase mt-4">SPA The Bay</strong>
+                        <p class="m-0">Voyagez dans un univers de volupté, de bien-être et de sensations douces et apaisantes (services de massages, soins du corps ou du visage, beauté des mains et des pieds, etc)</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                    <div class="d-grid border border-light rounded h-100 p-3 p-md-4 p-lg-5">
+                        <i class='bx bx-drink fs-1'></i>
+                        <strong class="text-uppercase mt-4">Le Bar de La Plage</strong>
+                        <p class="m-0">Au Bar de la Plage, joie et envie de rire ensemble ne manquent jamais! musique live, Fumeur de Cigares, danses Traditionnelle, Champagne, Soirée Karaoké, Cocktail Création, retransmission sportive, DJ toutes les occasions sont bonnes pour faire la fête ensemble.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="venir-en-ci" class="container my-5">
+        <h2 class="section__title">Venir en côte d’ivoire</h2>
+        <div class="text-center">
+            <h4>Un visa est obligatoire !</h4>
+            <p>Pour venir en Côte d’Ivoire, les ressortissants européens doivent obtenir un visa biométrique auprès de l’Ambassade de Côte d’Ivoire à Paris ou auprès d’un consulat ivoirien. Le passeport européen doit être en cours de validité à l’expiration du séjour envisagé.</p>
+
+            <p>Depuis le 2 janvier 2014, les ressortissants européens ont également la possibilité de demander un E-Visa biométrique sur le site SNEDAI (<a href="https://snedai.com/e-visa/">https://snedai.com/e-visa/</a>)</p>
+
+            <p>Pensez à bien faire votre demande de visa 1 mois avant votre départ.<br>
+            Vous aurez besoin de votre réservation de vol pour faire la procédure de visa + un justificatif de votre réservation pour votre hébergement.</p>
+            <p>Pensez à bien imprimer votre attestation de visa avant de partir.<br>
+
+            Les visas définitifs seront collés sur vos passeports au service des E-visas à l'arrivée à l'aéroport d'Abidjan.</p>
+
+
+            <h4>Covid</h4>
+
+            <p>Plus de tests Covid nécessaire !<br>
+
+            Depuis le 14 avril 2023 les dispositions relatives à l’état d’urgence sanitaire et au dispositif de contrôle à l’aéroport Félix Houphouët-Boigny, sont levées :</p>
+            <ul>
+                <li>Le port du masque facial n’est plus obligatoire mais reste fortement recommandé surtout pour les personnes vulnérables et porteuses de maladies chroniques ;</li>
+                <li>Les dispositifs de contrôle des attestations COVID-19 et des cartes de vaccination COVID-19 au sein de l’aérogare sont supprimés ;</li>
+            </ul>
+
+            <h4>Vaccination </h4>
+
+            <p>Vaccin Fièvre Jaune<br>
+            Le vaccin contre la fièvre jaune est OBLIGATOIRE pour rentrer sur le territoire ivoirien. Une fois fait, il est valable à vie!</p>
+            <p>Le carnet de vaccination est contrôlé à l'arrivée en même temps que les passeports.</p>
+            <p>Si vous n'êtes pas déjà vaccinés, il est impératif de le faire avant de venir, autrement vous serez vaccinés sur place par les services de l’hygiène publique avant de quitter l'aéroport (montant environ 10000F.cfa soit 15euros)</p>
+
+            <h4>Se déplacer a abidjan</h4>
+
+            <p>Pour vous déplacer à Abidjan vous avez plusieurs possibilités:</p>
+            <ul>
+                <li>Location de voiture: si vous le souhaitez, vous pouvez vous rapprocher de Freeda notre wedding planner pour qu'elle contacte des services de location de voitures à partir de 38€ par jour.</li>
+                <li>Taxis / VTC : cette option est assez pratique et à moindre coût. Les applications Yango (nous vous recommandons celle-ci), Uber et Heetch sont disponibles.</li>
+            </ul>
+
+            <h4>Accès à san pedro, grand bereby et aux hotels</h4>
+
+            <p>Au départ d'Abidjan<br>
+            Avion : 45 min de vol, Abidjan/San Pedro avec Air Côte d'Ivoire</p>
+
+            <p>Navette aéroport –hotels  <br>
+            Pour la baie des sirènes ou le katoum : 50 minutes de transfert Aéroport/Hôtel  <br>
+            Tarif: 2.000 F cfa / trajet / adulte<br>
+            gratuit pour les enfants de -12 ans</p>
+
+            <p>Voiture :<br>
+            Au départ d'Abidjan par la cotière : compter xx heures </br>
+            Parking gratuit et surveillé aux hôtels</p>
+
+            <h4>Tourisme à Grand-Bereby et ses environs</h4>
+            <ul>
+                <li>Les piscines naturelles de Tabaoulé (45 mins en voiture). Magnifiques paysages naturels, d’impressionnants rochers qui abritent une piscine naturelle.</li>
+                <li>Découverte de la rivière Nero et des singes et recherche des crocodiles. Excursion en pirogue traditionnelle - voir avec l’hôtel katoum</li>
+                <li>Ponte des tortues (excursion de nuit + pique-nique, période : octobre/novembre) – voir avec l’hôtel katoum</li>
+                <li>Eclosion des œufs de tortues (période : décembre/janvier/février) – voir avec l’hôtel katoum</li>
+                <li>Observation des baleines en mer (période : août) – voir avec l’hôtel katoum</li>
+                <li>Les cascades naturelles de la haute dodo</li>
+            </ul>
+
+            <h4>Sites à voir à San pedro</h4>
+            <ul>
+                <li>Les belles plages</li>
+                <li>Le rocher des amours (spot photo souvenir)</li>
+                <li>Le port maritime</li>
+                <li>La corniche</li>
+                <li>Embouchure et sa plage ( à visiter au coucher du soleil)- ne pas se baigner car présence de requins bouledogue) et balade en pirogue sur la lagune</li>
+                <li>La lagune digboué</li>
+                <li>Piscines naturelles (faire attention aux oursins et horaires des marées)</li>
+                <li>La baie de Taki</li>
+            </ul>
+
+            <h4>On fait quoi à Baby ?</h4>
+
+            <p>Restaurants : <br>
+            Le saakan</p>
+
+            <h4>Achats de souvenir</h4>
+
+            <p>Assinie ile boulay</p>
+        </div>
+    </section>
+{% endblock %}
