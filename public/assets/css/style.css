@@ -260,6 +260,31 @@ img {
     display: block;
 }
 
+#hotels::before, #venir-en-ci::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75px;
+    width: 517px;
+    height: 483px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../media/icon_palm.png)
+}
+
+#que-faire::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -75px;
+    width: 517px;
+    height: 483px;
+    transform:scaleX(-1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../media/icon_palm.png)
+}
+
 /*=============== INVIT LETTER ===============*/
 .invit__letter {
     position: relative;
@@ -346,7 +371,7 @@ header a.nav-link::after {
     background-color: var(--body-color);
 }
 
-header a.nav-link:hover::after {
+header a.nav-link:hover::after, header a.nav-link.active::after {
     width: 100%;
 }
 
