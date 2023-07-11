@@ -1,29 +1,61 @@
 
 <footer class="py-5">
     <div class="row">
-        <div class="col-md-6 text-center d-none d-md-block">
+        <div class="col-lg-6 text-center d-none d-lg-block">
             <img width="524" height="710" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/05/green-home2-rsvp.png" class="cata-image-img attachment-full position-relative" alt="">
         </div>
 
-        <div class="col-md-6 d-flex align-items-center justify-content-center px-4 px-sm-0">
+        <div class="col-lg-6 d-flex align-items-center justify-content-center px-4 px-md-5">
             <form class="form position-relative">
-                <div class="text-center">
-                    <h2 class="section__title">Veuillez confirmer votre présence</h2>
-                    <p>Please reserve before Feb 14th, 2018. Tell us if you're coming</p>
+                <div class="text-center mb-3">
+                    <h2 class="section__title">Partagez avec nous ce moment.</h2>
+                    <span class="section__subtitle">Veuillez réserver avant le 05 Septembre 2030.<br>Dites-nous si vous venez</span>
                 </div>
                 <div class="form-group d-flex justify-content-between gap-3 mb-3">
-                    <input type="text" class="form-control" placeholder="Votre nom" name="nom">
-                    <input type="text" class="form-control" placeholder="Votre prénom" name="prenom">
+                    <input type="text" class="form-control" placeholder="Votre nom *" name="nom" required>
+                    <input type="text" class="form-control" placeholder="Votre prénom *" name="prenom" required>
                 </div>
                 <div class="form-group d-flex justify-content-between gap-3 mb-3">
-                    <input type="tel" class="form-control" placeholder="Téléphone" name="tel">
+                    <input type="tel" class="form-control" placeholder="Téléphone *" name="tel" required>
                     <input type="email" class="form-control" placeholder="Email" name="email">
                 </div>
                 <div class="form-group d-flex justify-content-between gap-3 mb-3">
-                    <input type="text" id="date-range" class="form-control" placeholder="Sélectionner une plage de dates">
+                    <select class="form-control" name="personnes" required>
+                        <option value="">Combien êtes-vous ? *</option>
+                        <option>Je viens seul</option>
+                        <option>Nous venons à deux (2)</option>
+                        <option>Nous venons à trois (3)</option>
+                        <option>Nous venons à quatre (4)</option>
+                        <option>Nous venons à cinq (5)</option>
+                        <option>Nous venons à six (6)</option>
+                        <option>Nous venons à sept (7)</option>
+                    </select>
+                    <select class="form-control" name="transport" required>
+                        <option value="">Comment venez-vous ? *</option>
+                        <option>Je viens en voiture</option>
+                        <option>Je viens en car</option>
+                        <option>Je viens en avion</option>
+                    </select>
                 </div>
                 <div class="form-group d-flex justify-content-between gap-3 mb-3">
-                    <button class="btn btn-primary">Confirmer</button>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="participation[]" id="inlineCheckbox1" value="Ceremonie Civile">
+                    <label class="form-check-label" for="inlineCheckbox1">Je partaicipe à la Ceremonie Civile</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="participation[]" id="inlineCheckbox2" value="Ceremonie Réligieuse">
+                    <label class="form-check-label" for="inlineCheckbox2">Je partaicipe à la Ceremonie Réligieuse</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="participation[]" id="inlineCheckbox3" value="Dîner">
+                    <label class="form-check-label" for="inlineCheckbox3">Je partaicipe au Dîner</label>
+                </div>
+                </div>
+                <div class="form-group d-flex justify-content-between gap-3 mb-3">
+                    <input type="text" id="date-range" class="form-control" placeholder="Sélectionner les dates de votre séjour *" required>
+                </div>
+                <div class="form-group d-flex justify-content-between gap-3 mb-3">
+                    <button class="btn btn-primary px-5">Confirmer</button>
                 </div>
             </form>
         </div>

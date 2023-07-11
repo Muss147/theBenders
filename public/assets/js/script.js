@@ -4,8 +4,18 @@ window.addEventListener("scroll", (event) => {
     else header.classList.remove('bg-light', 'navbar-light', 'shadow');
 });
 
+var navbarToggler = document.querySelector('.navbar-toggler');
+var header = document.querySelector('header');
+navbarToggler.addEventListener('click', function() {
+    if (!header.classList.contains('bg-light')) {
+        header.classList.toggle('bg-light');
+        header.classList.toggle('navbar-light');
+        header.classList.toggle('shadow');
+    }
+});
+
 function countdown() {
-    var targetDate = new Date("2023-06-26T23:59:59"); // Date cible du compte à rebours
+    var targetDate = new Date("2023-10-06T23:59:59"); // Date cible du compte à rebours
     var countdownElements = document.getElementsByClassName("countdown-amount");
 
     var interval = setInterval(function () {

@@ -5,17 +5,7 @@
 {% block stylesheets %}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 <style type="text/css">
-@media (max-width: 768px) {
-    #venir-en-ci div {
-        column-count: 2 !important;
-        column-gap: 20px;
-    }
-}
-@media (max-width: 575px) {
-    #venir-en-ci div {
-        column-count: 1 !important;
-    }
-}
+
 </style>
 {% endblock %}
 
@@ -25,24 +15,42 @@
         <div class="carousel__container">
             <div class="carousel_elm">
                 <div class="carousel__img" style="background-image: url({{asset('assets/media/carousel_1.jpg')}}); background-size: cover; background-position: center center; width: 100%; height: 100vh; opacity: 1; visibility: inherit; z-index: 20;">
-                    <div class="carousel__content">
-                        <img class="carousel__line-top" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/04/line_top.png" alt="" width="220" height="35">
+                    <div class="carousel__content cata-countdown">
                         <div class="carousel__text">
                             <h1 class="carousel__title">Vanessa & Emmanuel</h1>
-                            <span class="carousel__sub-title">se disent Ouiii !!</span>
+                            <span class="carousel__sub-title">06 & 07 Octobre 2023</span>
+                            {# <h4>Grand Bereby - Baie des Sirènes</h4> #}
                         </div>
-                        <img class="carousel__line-top" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/04/line_top.png" alt="" width="220" height="35">
+                        {# <img class="carousel__line-top" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/04/line_top.png" alt="" width="220" height="35"> #}
+                        <img src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/05/top-line-while.png" class="cata-image-img attachment-full" alt="" width="203" height="27">
+
+                        <div class="cata-countdown-content is-countdown" data-date="2023/10/06/">
+                            <span class="countdown-row">
+                                <span class="countdown-section rounded border bg-transparent shadow">
+                                    <span class="countdown-amount">00</span>
+                                    <span class="countdown-period">Jours</span>
+                                </span>
+                                <span class="countdown-section rounded border bg-transparent shadow">
+                                    <span class="countdown-amount">00</span>
+                                    <span class="countdown-period">Heures</span>
+                                </span>
+                                <span class="countdown-section rounded border bg-transparent shadow">
+                                    <span class="countdown-amount">00</span>
+                                    <span class="countdown-period">Secondes</span>
+                                </span>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- ============ COUNTDOWN ============ -->
-    <section class="cata-countdown section mt-5">
+    {# <section class="cata-countdown section mt-5">
         <h2 class="section__title">Le 26 Juin 2023</h2>
         <span class="section__subtitle">La baie des sirènes</span>
 
-        <div class="cata-countdown-content is-countdown" data-date="2023/06/20/">
+        <div class="cata-countdown-content is-countdown" data-date="2023/10/06/">
             <span class="countdown-row">
                 <span class="countdown-section">
                     <span class="countdown-amount">00</span>
@@ -58,12 +66,12 @@
                 </span>
             </span>
         </div>
-    </section>
+    </section> #}
 
     <!-- ============ INVIT LETTER ============ -->
     <section id="hello" class="invit__letter py-5">
         <div class="container position-relative bg-white text-dark rounded shadow w-auto w-md-75 w-lg-50 mx-2 mx-sm-auto my-5">
-            <div class="px-5 pt-5">
+            <div class="p-5">
                 <h2 class="section__title">Hello chers tous,</h2>
                 <p>Grande nouvelle, ça y est nous avons décidé de sauter le pas !!! 
                 <br>Nous nous marions, Yeaaah !</p>
@@ -79,12 +87,12 @@
 
                 <p>Pour toute(s) information(s) complémentaire(s), nous vous invitons à contacter notre Wedding Planner, Freeda sur WhatsApp: +225 07 77 86 77 86</p>
                 <p>Bonne navigation et à très vite !</p>
-                <p>Vanessa et Emmanuel</p>
+                <p class="text-end">Vanessa et Emmanuel</p>
             </div>
 
-            <div class="text-center">
+            {# <div class="text-center">
                 <img src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/04/green-flower.png" alt="Texture top" style="margin-bottom: -80px;">
-            </div>
+            </div> #}
         </div>
     </section>
 
@@ -207,7 +215,7 @@
             <br>une oasis de tranquillité</p>
             <div class="row mt-5">
                 <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
-                    <div class="que__faire d-grid border border-light rounded h-100 p-3 p-md-4 p-lg-5">
+                    <div class="que__faire d-grid border rounded h-100 p-3 p-md-4 p-lg-5">
                         <i class='bx bx-water fs-1'></i>
                         <strong class="text-uppercase mt-4">Base Nautique</strong>
                         <p class="m-0">Vivez toutes les sensations de la mer ! 
@@ -215,7 +223,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
-                    <div class="que__faire d-grid border border-light rounded h-100 p-3 p-md-4 p-lg-5">
+                    <div class="que__faire d-grid border rounded h-100 p-3 p-md-4 p-lg-5">
                         <i class='bx bx-swim fs-1'></i>
                         <strong class="text-uppercase mt-4">Piscine et Plage</strong>
                         <p class="m-0">Vivez toutes les sensations de la mer ! 
@@ -223,14 +231,14 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
-                    <div class="que__faire d-grid border border-light rounded h-100 p-3 p-md-4 p-lg-5">
+                    <div class="que__faire d-grid border rounded h-100 p-3 p-md-4 p-lg-5">
                         <i class='bx bxs-tennis-ball fs-1'></i>
                         <strong class="text-uppercase mt-4">Terrains de tennis, volley etc.</strong>
                         <p class="m-0">badminton, ping-pong, beach soccer, Mini-golf, pétanque, krou men (jeu de quilles traditionnel en bois sur la plage), tir à l’arc adulte et junior, vélos VTT, Tyrolienne...</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
-                    <div class="que__faire d-grid border border-light rounded h-100 p-3 p-md-4 p-lg-5">
+                    <div class="que__faire d-grid border rounded h-100 p-3 p-md-4 p-lg-5">
                         <i class='bx bxs-baby-carriage fs-1'></i>
                         <strong class="text-uppercase mt-4">Pour Les Enfants</strong>
                         <p class="m-0">Des jeux d’extérieurs sont installés à l’ombre, en arrière plage avec toboggan, maisonnettes d’escalade, balançoires. Divers jeux géants. 
@@ -238,7 +246,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
-                    <div class="que__faire d-grid border border-light rounded h-100 p-3 p-md-4 p-lg-5">
+                    <div class="que__faire d-grid border rounded h-100 p-3 p-md-4 p-lg-5">
                         <i class='bx bx-walk fs-1'></i>
                         <strong class="text-uppercase mt-4">Balades Découvertes</strong>
                         <p class="m-0">Parcours de santé et balades découverte dans la colline aux Civettes (promenade de 45 mn qui vous conduira dans une forêt naturelle où la végétation a repris ses droits. Avant de rentrer arrêtez-vous sur la plateforme en surplomb, pour une vue magnifique de l’hôtel.
@@ -246,35 +254,35 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
-                    <div class="que__faire d-grid border border-light rounded h-100 p-3 p-md-4 p-lg-5">
+                    <div class="que__faire d-grid border rounded h-100 p-3 p-md-4 p-lg-5">
                         <i class='bx bx-coin-stack fs-1'></i>
                         <strong class="text-uppercase mt-4">Excursions payantes</strong>
                         <p class="m-0">se renseigner à la réception – selon les conditions météo et les marées.</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
-                    <div class="que__faire d-grid border border-light rounded h-100 p-3 p-md-4 p-lg-5">
+                    <div class="que__faire d-grid border rounded h-100 p-3 p-md-4 p-lg-5">
                         <i class='bx bx-car fs-1'></i>
                         <strong class="text-uppercase mt-4">Les Voiturettes</strong>
                         <p class="m-0">Dans le souci de préserver la quiétude de nos hôtes, des voiturettes vous accompagnent au parking à la réception et jusqu’à votre chambre lors de votre arrivée. Il en va de même le jour du départ sur simple demande à la réception.</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
-                    <div class="que__faire d-grid border border-light rounded h-100 p-3 p-md-4 p-lg-5">
+                    <div class="que__faire d-grid border rounded h-100 p-3 p-md-4 p-lg-5">
                         <i class='bx bxs-tree-alt fs-1'></i>
                         <strong class="text-uppercase mt-4">Centre équestre</strong>
                         <p class="m-0">Balade Sportive – excursion payante. Découverte et initiation</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
-                    <div class="que__faire d-grid border border-light rounded h-100 p-3 p-md-4 p-lg-5">
+                    <div class="que__faire d-grid border rounded h-100 p-3 p-md-4 p-lg-5">
                         <i class='bx bx-spa fs-1'></i>
                         <strong class="text-uppercase mt-4">SPA The Bay</strong>
                         <p class="m-0">Voyagez dans un univers de volupté, de bien-être et de sensations douces et apaisantes (services de massages, soins du corps ou du visage, beauté des mains et des pieds, etc)</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
-                    <div class="que__faire d-grid border border-light rounded h-100 p-3 p-md-4 p-lg-5">
+                    <div class="que__faire d-grid border rounded h-100 p-3 p-md-4 p-lg-5">
                         <i class='bx bx-drink fs-1'></i>
                         <strong class="text-uppercase mt-4">Le Bar de La Plage</strong>
                         <p class="m-0">Au Bar de la Plage, joie et envie de rire ensemble ne manquent jamais! musique live, Fumeur de Cigares, danses Traditionnelle, Champagne, Soirée Karaoké, Cocktail Création, retransmission sportive, DJ toutes les occasions sont bonnes pour faire la fête ensemble.</p>
@@ -286,67 +294,76 @@
 
     <section id="venir-en-ci" class="container position-relative my-5">
         <h2 class="section__title mb-5">Venir en Côte d’Ivoire</h2>
-        <div class="position-relative text-justify" style="column-count: 3; column-gap: 40px;">
-            <h4 class="mb-3">Un visa est obligatoire !</h4>
-            <p>Pour venir en Côte d’Ivoire, les ressortissants européens doivent obtenir un visa biométrique auprès de l’Ambassade de Côte d’Ivoire à Paris ou auprès d’un consulat ivoirien. Le passeport européen doit être en cours de validité à l’expiration du séjour envisagé.</p>
-            <p>Depuis le 2 janvier 2014, les ressortissants européens ont également la possibilité de demander un E-Visa biométrique sur le site SNEDAI (<a class="text-white" href="https://snedai.com/e-visa/">https://snedai.com/e-visa/</a>)</p>
-            <p class="mb-4">Pensez à bien faire votre demande de visa 1 mois avant votre départ. Vous aurez besoin de votre réservation de vol pour faire la procédure de visa + un justificatif de votre réservation pour votre hébergement.</p>
-            
-            <h4 class="mb-3">Covid</h4>
-            <p>Plus de tests Covid nécessaires !</p>
-            <p>Depuis le 14 avril 2023, les dispositions relatives à l’état d’urgence sanitaire et au dispositif de contrôle à l’aéroport Félix Houphouët-Boigny, sont levées :</p>
-            <ul style="list-style-type: disc;">
-                <li>Le port du masque facial n’est plus obligatoire mais reste fortement recommandé surtout pour les personnes vulnérables et porteuses de maladies chroniques ;</li>
-                <li>Les dispositifs de contrôle des attestations COVID-19 et des cartes de vaccination COVID-19 au sein de l’aérogare sont supprimés ;</li>
-            </ul>
-            
-            <h4 class="mb-3">Vaccination</h4>
-            <p>Vaccin Fièvre Jaune</p>
-            <p>Le vaccin contre la fièvre jaune est OBLIGATOIRE pour rentrer sur le territoire ivoirien. Une fois fait, il est valable à vie!</p>
-            <p class="mb-4">Le carnet de vaccination est contrôlé à l'arrivée en même temps que les passeports.</p>
-            
-            <h4 class="mb-3">Se déplacer à Abidjan</h4>
-            <p>Pour vous déplacer à Abidjan vous avez plusieurs possibilités:</p>
-            <ul style="list-style-type: disc;">
-                <li>Location de voiture: si vous le souhaitez, vous pouvez vous rapprocher de Freeda notre wedding planner pour qu'elle contacte des services de location de voitures à partir de 38€ par jour.</li>
-                <li>Taxis / VTC : cette option est assez pratique et à moindre coût. Les applications Yango (nous vous recommandons celle-ci), Uber et Heetch sont disponibles.</li>
-            </ul>
-            <br>
-            <h4 class="mb-3">Accès à San Pedro, Grand Bereby et aux hôtels</h4>
-            <p>Au départ d'Abidjan</p>
-            <ul style="list-style-type: disc;">
-                <li>Avion : 45 min de vol, Abidjan/San Pedro avec Air Côte d'Ivoire</li>
-                <li>Navette aéroport – hôtels</li>
-            </ul>
-            <p>Tarif: 2.000 F CFA / trajet / adulte</p>
-            <p class="mb-4">Gratuit pour les enfants de moins de 12 ans</p>
-            
-            <h4 class="mb-3">Tourisme à Grand-Bereby et ses environs</h4>
-            <p>Les piscines naturelles de Tabaoulé (45 minutes en voiture). Magnifiques paysages naturels, d’impressionnants rochers qui abritent une piscine naturelle.</p>
-            <p>Découverte de la rivière Nero et des singes et recherche des crocodiles. Excursion en pirogue traditionnelle - voir avec l’hôtel katoum</p>
-            <p>Ponte des tortues (excursion de nuit + pique-nique, période : octobre/novembre) – voir avec l’hôtel katoum</p>
-            <p>Eclosion des œufs de tortues (période : décembre/janvier/février) – voir avec l’hôtel katoum</p>
-            <p>Observation des baleines en mer (période : août) – voir avec l’hôtel katoum</p>
-            
-            <h4 class="mb-3">Sites à voir à San Pedro</h4>
-            <ul style="list-style-type: disc;">
-                <li>Les belles plages</li>
-                <li>Le rocher des amours (spot photo souvenir)</li>
-                <li>Le port maritime</li>
-                <li>La corniche</li>
-                <li>Embouchure et sa plage (à visiter au coucher du soleil) - ne pas se baigner car présence de requins bouledogue) et balade en pirogue sur la lagune</li>
-                <li>La lagune digboué</li>
-                <li>Piscines naturelles (faire attention aux oursins et horaires des marées)</li>
-                <li>La baie de Taki</li>
-            </ul>
-            
-            <h4 class="mb-3">On fait quoi à Baby ?</h4>
-            <p>Restaurants :</p>
-            <ul style="list-style-type: disc;">
-                <li>Le saakan</li>
-            </ul>
-            
-            <p class="mb-4">Achats de souvenirs : Assinie ile boulay</p>
+        <div class="position-relative row">
+            <div class="col-12 text-justify">
+                <h4 class="mb-3">Un visa est obligatoire !</h4>
+                <p>Pour venir en Côte d’Ivoire, les ressortissants européens doivent obtenir un visa biométrique auprès de l’Ambassade de Côte d’Ivoire à Paris ou auprès d’un consulat ivoirien. Le passeport européen doit être en cours de validité à l’expiration du séjour envisagé.</p>
+                <p>Depuis le 2 janvier 2014, les ressortissants européens ont également la possibilité de demander un E-Visa biométrique sur le site SNEDAI (<a class="" href="https://snedai.com/e-visa/">https://snedai.com/e-visa/</a>)</p>
+                <p class="mb-4">Pensez à bien faire votre demande de visa 1 mois avant votre départ. Vous aurez besoin de votre réservation de vol pour faire la procédure de visa + un justificatif de votre réservation pour votre hébergement.</p>
+            </div>
+            <div class="col-md-6">
+                <h4 class="mb-3">Covid</h4>
+                <p>Plus de tests Covid nécessaires !</p>
+                <p>Depuis le 14 avril 2023, les dispositions relatives à l’état d’urgence sanitaire et au dispositif de contrôle à l’aéroport Félix Houphouët-Boigny, sont levées :</p>
+                <ul style="list-style-type: disc;">
+                    <li>Le port du masque facial n’est plus obligatoire mais reste fortement recommandé surtout pour les personnes vulnérables et porteuses de maladies chroniques ;</li>
+                    <li>Les dispositifs de contrôle des attestations COVID-19 et des cartes de vaccination COVID-19 au sein de l’aérogare sont supprimés ;</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h4 class="mb-3">Vaccination</h4>
+                <p>Vaccin Fièvre Jaune</p>
+                <p>Le vaccin contre la fièvre jaune est OBLIGATOIRE pour rentrer sur le territoire ivoirien. Une fois fait, il est valable à vie!</p>
+                <p class="mb-4">Le carnet de vaccination est contrôlé à l'arrivée en même temps que les passeports.</p>
+            </div>
+            <div class="col-md-6">
+                <h4 class="mb-3">Se déplacer à Abidjan</h4>
+                <p>Pour vous déplacer à Abidjan vous avez plusieurs possibilités:</p>
+                <ul style="list-style-type: disc;">
+                    <li>Location de voiture: si vous le souhaitez, vous pouvez vous rapprocher de Freeda notre wedding planner pour qu'elle contacte des services de location de voitures à partir de 38€ par jour.</li>
+                    <li>Taxis / VTC : cette option est assez pratique et à moindre coût. Les applications Yango (nous vous recommandons celle-ci), Uber et Heetch sont disponibles.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h4 class="mb-3">Accès à San Pedro, Grand Bereby et aux hôtels</h4>
+                <p>Au départ d'Abidjan</p>
+                <ul style="list-style-type: disc;">
+                    <li>Avion : 45 min de vol, Abidjan/San Pedro avec Air Côte d'Ivoire</li>
+                    <li>Navette aéroport – hôtels</li>
+                </ul>
+                <p>Tarif: 2.000 F CFA / trajet / adulte</p>
+                <p class="mb-4">Gratuit pour les enfants de moins de 12 ans</p>
+            </div>
+            <div class="col-md-6">
+                <h4 class="mb-3">Tourisme à Grand-Bereby et ses environs</h4>
+                <p>Les piscines naturelles de Tabaoulé (45 minutes en voiture). Magnifiques paysages naturels, d’impressionnants rochers qui abritent une piscine naturelle.</p>
+                <p>Découverte de la rivière Nero et des singes et recherche des crocodiles. Excursion en pirogue traditionnelle - voir avec l’hôtel katoum</p>
+                <p>Ponte des tortues (excursion de nuit + pique-nique, période : octobre/novembre) – voir avec l’hôtel katoum</p>
+                <p>Eclosion des œufs de tortues (période : décembre/janvier/février) – voir avec l’hôtel katoum</p>
+                <p>Observation des baleines en mer (période : août) – voir avec l’hôtel katoum</p>
+            </div>
+            <div class="col-md-6">
+                <h4 class="mb-3">Sites à voir à San Pedro</h4>
+                <ul style="list-style-type: disc;">
+                    <li>Les belles plages</li>
+                    <li>Le rocher des amours (spot photo souvenir)</li>
+                    <li>Le port maritime</li>
+                    <li>La corniche</li>
+                    <li>Embouchure et sa plage (à visiter au coucher du soleil) - ne pas se baigner car présence de requins bouledogue) et balade en pirogue sur la lagune</li>
+                    <li>La lagune digboué</li>
+                    <li>Piscines naturelles (faire attention aux oursins et horaires des marées)</li>
+                    <li>La baie de Taki</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h4 class="mb-3">On fait quoi à Baby ?</h4>
+                <p>Restaurants :</p>
+                <ul style="list-style-type: disc;">
+                    <li>Le saakan</li>
+                </ul>
+                
+                <p class="mb-4">Achats de souvenirs : Assinie ile boulay</p>
+            </div>
         </div>
     </section>
 
@@ -355,15 +372,15 @@
 {% block javascripts %}
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/fr.js"></script>
-<script>
+<script type="text/javascript">
     // Récupérer l'élément du DOM
     var dateRangeInput = document.getElementById('date-range');
 
     // Initialiser le plugin de sélection de plage de dates
     flatpickr(dateRangeInput, {
-      mode: 'range',
-      dateFormat: 'Y-m-d',
-      locale: 'fr'
+        mode: 'range',
+        dateFormat: 'Y-m-d',
+        locale: 'fr'
     });
 </script>
 {% endblock %}
