@@ -1,15 +1,15 @@
 
-<footer class="py-5">
+<footer id="reservation" class="pb-5" style="padding-top: 100px">
     <div class="row">
         <div class="col-lg-6 text-center d-none d-lg-block">
-            <img width="524" height="710" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/05/green-home2-rsvp.png" class="cata-image-img attachment-full position-relative" alt="">
+            <img width="524" height="710" src="{{asset('assets/media/icon_palm_lightColor.png')}}" class="cata-image-img attachment-full position-relative" alt="">
         </div>
 
         <div class="col-lg-6 d-flex align-items-center justify-content-center px-4 px-md-5">
             <form class="form position-relative">
                 <div class="text-center mb-3">
                     <h2 class="section__title">Partagez avec nous ce moment.</h2>
-                    <span class="section__subtitle">Veuillez réserver avant le 05 Septembre 2030.<br>Dites-nous si vous venez</span>
+                    <span class="section__subtitle">Veuillez réserver avant le 31 Juillet 2023.<br>Dites-nous si vous venez</span>
                 </div>
                 <div class="form-group d-flex justify-content-between gap-3 mb-3">
                     <input type="text" class="form-control" placeholder="Votre nom *" name="nom" required>
@@ -37,19 +37,19 @@
                         <option>Je viens en avion</option>
                     </select>
                 </div>
-                <div class="form-group d-flex justify-content-between gap-3 mb-3">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="participation[]" id="inlineCheckbox1" value="Ceremonie Civile">
-                    <label class="form-check-label" for="inlineCheckbox1">Je partaicipe à la Ceremonie Civile</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="participation[]" id="inlineCheckbox2" value="Ceremonie Réligieuse">
-                    <label class="form-check-label" for="inlineCheckbox2">Je partaicipe à la Ceremonie Réligieuse</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="participation[]" id="inlineCheckbox3" value="Dîner">
-                    <label class="form-check-label" for="inlineCheckbox3">Je partaicipe au Dîner</label>
-                </div>
+                <div class="form-group mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="participation[]" id="inlineCheckbox1" value="Cérémonie Civile">
+                        <label class="form-check-label" for="inlineCheckbox1">Je participe à la Cérémonie Civile</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="participation[]" id="inlineCheckbox2" value="Cérémonie Religieuse">
+                        <label class="form-check-label" for="inlineCheckbox2">Je participe à la Cérémonie Religieuse</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="participation[]" id="inlineCheckbox3" value="Dîner">
+                        <label class="form-check-label" for="inlineCheckbox3">Je participe au Dîner</label>
+                    </div>
                 </div>
                 <div class="form-group d-flex justify-content-between gap-3 mb-3">
                     <input type="text" id="date-range" class="form-control" placeholder="Sélectionner les dates de votre séjour *" required>

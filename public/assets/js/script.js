@@ -14,6 +14,26 @@ navbarToggler.addEventListener('click', function() {
     }
 });
 
+// Nav links activate
+var navLink = document.querySelectorAll('header .nav-link');
+var navBrand = document.querySelector('header .navbar-brand');
+for (var i = 0; i < navLink.length; i++) {
+    navLink[i].addEventListener('click', function(e) {
+        removeNavLink();
+        e.target.classList.add('active');
+    });
+    
+}
+navBrand.addEventListener('click', function() {
+    removeNavLink();
+});
+
+function removeNavLink() {
+    for (var i = 0; i < navLink.length; i++) {
+        navLink[i].classList.remove('active');
+    }
+}
+
 function countdown() {
     var targetDate = new Date("2023-10-06T23:59:59"); // Date cible du compte à rebours
     var countdownElements = document.getElementsByClassName("countdown-amount");

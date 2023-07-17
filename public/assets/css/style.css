@@ -20,7 +20,7 @@
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
-    --normal-font-size: .938rem;
+    --normal-font-size: 1.1rem;
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
     --tiny-font-size: .625rem;
@@ -126,6 +126,18 @@ img {
     font-weight: 500;
 }
 
+.border-prm {
+    border: 2px solid var(--first-color);
+}
+
+.text-prm {
+    color: var(--first-color);
+}
+
+.bg-prm {
+    background-color: var(--first-color);
+}
+
 /*=============== HEADER & NAV ===============*/
 header {
     transition: .4s; /* For light mode animation */
@@ -202,6 +214,10 @@ header:not(.navbar-light) .navbar-toggler-icon {
     background-color: #000;
     opacity: .3;
 }
+
+/* section.carousel {
+    background: linear-gradient(180deg, rgb(143,78,62,1) 95%, rgba(255, 255, 255, 0) 100%);
+} */
 
 .carousel__content {
     color: var(--title-color);
@@ -313,15 +329,15 @@ header:not(.navbar-light) .navbar-toggler-icon {
 }
 
 /*=============== INVIT LETTER ===============*/
-.invit__letter, footer {
+.invit__letter {
     position: relative;
-    background-image: url('../media/carousel_2.jpeg');
+    background-image: url('../media/icon_palm_lightColor.png');
     background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
 }
 
-.invit__letter::before, footer::before {
+.invit__letter::before {
     content: "";
     position: absolute;
     top: 0;
@@ -350,7 +366,7 @@ header:not(.navbar-light) .navbar-toggler-icon {
     height: 483px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../media/icon_palm_prmColor.png)
+    background-image: url(../media/icon_palm_lightColor.png)
 }
 
 #venir-en-ci::before {
@@ -362,7 +378,7 @@ header:not(.navbar-light) .navbar-toggler-icon {
     height: 483px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../media/icon_palm_prmColor.png)
+    background-image: url(../media/icon_palm_lightColor.png)
 }
 
 /*=============== QUE FAIRE ===============*/
@@ -376,7 +392,7 @@ header:not(.navbar-light) .navbar-toggler-icon {
     transform:scaleX(-1);
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../media/icon_palm_prmColor.png)
+    background-image: url(../media/icon_palm_lightColor.png)
 }
 
 .que__faire {
@@ -415,6 +431,16 @@ header:not(.navbar-light) .navbar-toggler-icon {
     transform: translateY(-10px);
 }
 
+#tourisme-en-ci .nav-link {
+    color: var(--first-color);
+}
+#tourisme-en-ci .nav-link:hover {
+    color: var(--first-color);
+}
+
+footer {
+    background: linear-gradient(0deg, rgb(143,78,62,1) 15%, rgba(255, 255, 255, 0) 100%);
+}
 
 /*=============== FORM CONTROL ===============*/
 .form-control:focus {
@@ -428,7 +454,7 @@ header:not(.navbar-light) .navbar-toggler-icon {
 .btn-primary {
     color: #fff;
     background-color: var(--first-color);
-    border-color: var(--first-color);
+    border-color: #fff;
 }
 .btn-primary:hover {
     background-color: #421f16;
