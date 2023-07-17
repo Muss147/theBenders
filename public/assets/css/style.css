@@ -361,7 +361,7 @@ header:not(.navbar-light) .navbar-toggler-icon {
     content: "";
     position: absolute;
     top: 0;
-    left: -75px;
+    left: -175px;
     width: 517px;
     height: 483px;
     background-size: cover;
@@ -373,20 +373,7 @@ header:not(.navbar-light) .navbar-toggler-icon {
     content: "";
     position: absolute;
     top: 0;
-    left: -135px;
-    width: 517px;
-    height: 483px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../media/icon_palm_lightColor.png)
-}
-
-/*=============== QUE FAIRE ===============*/
-#que-faire::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -75px;
+    right: -175px;
     width: 517px;
     height: 483px;
     transform:scaleX(-1);
@@ -395,6 +382,7 @@ header:not(.navbar-light) .navbar-toggler-icon {
     background-image: url(../media/icon_palm_lightColor.png)
 }
 
+/*=============== QUE FAIRE ===============*/
 .que__faire {
     position: relative;
     overflow: hidden;
@@ -461,6 +449,12 @@ footer {
     border-color: var(--first-color);
 }
 /*=============== MEDIA QUERIES ===============*/
+@media (max-width: 720px) {
+    #hotels::before, #venir-en-ci::before {
+        width: 317px;
+        height: 283px;
+    }
+}
 @media (min-width: 720px) {
     .w-md-75 {
         width: 75% !important;

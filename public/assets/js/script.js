@@ -17,10 +17,12 @@ navbarToggler.addEventListener('click', function() {
 // Nav links activate
 var navLink = document.querySelectorAll('header .nav-link');
 var navBrand = document.querySelector('header .navbar-brand');
+var mobileMenu = document.querySelector('#navbarTogglerDemo02');
 for (var i = 0; i < navLink.length; i++) {
     navLink[i].addEventListener('click', function(e) {
         removeNavLink();
         e.target.classList.add('active');
+        mobileMenu.classList.remove('show');
     });
     
 }
