@@ -425,6 +425,9 @@ header:not(.navbar-light) .navbar-toggler-icon {
 #tourisme-en-ci .nav-link:hover {
     color: var(--first-color);
 }
+#tourisme-en-ci .nav-link.active {
+    color: #495057;
+}
 
 footer {
     background: linear-gradient(0deg, rgb(143,78,62,1) 15%, rgba(255, 255, 255, 0) 100%);
