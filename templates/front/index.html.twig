@@ -114,6 +114,73 @@
         </div>
     </section>
 
+    <section id="reservation" style="padding-top: 100px">
+        <div class="container bg-prm rounded text-white py-3 py-md-5">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <div class="text-end mb-3">
+                        <h2 class="section__title text-white">Réservation</h2>
+                        <p class="section__subtitle">Partagez avec nous ce moment.</p>
+                        <p class="section__subtitle">Veuillez confirmer votre présence avant 
+                        <br><b>le 31 août 2023</b>.</p>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <form class="form me-0 me-md-5" action="" method="POST">
+                        <div class="form-group d-flex justify-content-between gap-3 mb-3">
+                            <input type="text" class="form-control" placeholder="Votre nom *" name="nom" required>
+                            <input type="text" class="form-control" placeholder="Votre prénom *" name="prenom" required>
+                        </div>
+                        <div class="form-group d-flex justify-content-between gap-3 mb-3">
+                            <input type="tel" class="form-control" placeholder="Téléphone *" name="tel" required>
+                            <input type="email" class="form-control" placeholder="Email" name="email">
+                        </div>
+                        <div class="form-group d-flex justify-content-between gap-3 mb-3">
+                            <select class="form-control" name="personnes" required>
+                                <option value="">Combien êtes-vous ? *</option>
+                                <option>Je viens seul</option>
+                                <option>Nous venons à deux (2)</option>
+                                <option>Nous venons à trois (3)</option>
+                                <option>Nous venons à quatre (4)</option>
+                                <option>Nous venons à cinq (5)</option>
+                                <option>Nous venons à six (6)</option>
+                                <option>Nous venons à sept (7)</option>
+                            </select>
+                            <select class="form-control" name="transport" required>
+                                <option value="">Comment venez-vous ? *</option>
+                                <option>Je viens en voiture</option>
+                                <option>Je viens en car</option>
+                                <option>Je viens en avion</option>
+                            </select>
+                        </div>
+                        <div class="form-group mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="participation[]" id="inlineCheckbox1" value="Cérémonie Civile">
+                                <label class="form-check-label" for="inlineCheckbox1">Je participe à la Cérémonie Civile</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="participation[]" id="inlineCheckbox2" value="Cérémonie Religieuse">
+                                <label class="form-check-label" for="inlineCheckbox2">Je participe à la Cérémonie Religieuse</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="participation[]" id="inlineCheckbox3" value="Dîner">
+                                <label class="form-check-label" for="inlineCheckbox3">Je participe au Dîner</label>
+                            </div>
+                        </div>
+                        <div class="form-group d-flex justify-content-between gap-3 mb-3">
+                            <input type="text" id="date-range" class="form-control" placeholder="Sélectionner les dates de votre séjour *" required>
+                        </div>
+                        <div class="form-group d-flex justify-content-between gap-3">
+                            <button class="btn btn-primary px-5">Confirmer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ============ TIMELINE ============ -->
     <section id="hotels" class="section cata-section-container-stretch position-relative" id="ourstory" style="padding-top:100px; margin-bottom:0;">
         <div class="container m-auto">
@@ -238,14 +305,31 @@
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active py-5" id="nav-bereby" role="tabpanel" aria-labelledby="nav-bereby-tab">
-                    <h4 class="mb-3">Tourisme à Grand-Bereby et ses environs</h4>
-                    <p>Les piscines naturelles de Tabaoulé (45 minutes en voiture). Magnifiques paysages naturels, d’impressionnants rochers qui abritent une piscine naturelle.</p>
-                    <p>Découverte de la rivière Nero et des singes et recherche des crocodiles. Excursion en pirogue traditionnelle - voir avec l’hôtel katoum</p>
-                    <p>Ponte des tortues (excursion de nuit + pique-nique, période : octobre/novembre) – voir avec l’hôtel katoum</p>
-                    <p>Eclosion des œufs de tortues (période : décembre/janvier/février) – voir avec l’hôtel katoum</p>
-                    <p>Observation des baleines en mer (période : août) – voir avec l’hôtel katoum</p>
-                    
+                <div class="tab-pane fade show active pt-5" id="nav-bereby" role="tabpanel" aria-labelledby="nav-bereby-tab">
+                    <div class="row text-start">
+                        <div class="col-md-6 mb-3">
+                            <h4 class="text-center mb-3">Tourisme à Grand-Bereby et ses environs</h4>
+                            <p>Les piscines naturelles de Tabaoulé (45 minutes en voiture). Magnifiques paysages naturels, d’impressionnants rochers qui abritent une piscine naturelle.</p>
+                            <p>Découverte de la rivière Nero et des singes et recherche des crocodiles. Excursion en pirogue traditionnelle - voir avec l’hôtel katoum</p>
+                            <p>Ponte des tortues (excursion de nuit + pique-nique, période : octobre/novembre) – voir avec l’hôtel katoum</p>
+                            <p>Eclosion des œufs de tortues (période : décembre/janvier/février) – voir avec l’hôtel katoum</p>
+                            <p>Observation des baleines en mer (période : août) – voir avec l’hôtel katoum</p>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h4 class="text-center mb-3">Sites à voir à San Pedro</h4>
+                            <ul style="list-style-type: disc;">
+                                <li>Les belles plages</li>
+                                <li>Le rocher des amours (spot photo souvenir)</li>
+                                <li>Le port maritime</li>
+                                <li>La corniche</li>
+                                <li>Embouchure et sa plage (à visiter au coucher du soleil) - ne pas se baigner car présence de requins bouledogue) et balade en pirogue sur la lagune</li>
+                                <li>La lagune digboué</li>
+                                <li>Piscines naturelles (faire attention aux oursins et horaires des marées)</li>
+                                <li>La baie de Taki</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h4 class="mb-3">Activités à la Baie des Sirènes</h4>
                     <div class="row mt-5">
                         <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
                             <div class="que__faire d-grid border rounded h-100 p-3 p-md-4 p-lg-5">
@@ -494,19 +578,6 @@
                     </ul>
                     <p>Tarif: 2.000 F CFA / trajet / adulte</p>
                     <p class="mb-4">Gratuit pour les enfants de moins de 12 ans</p>
-                </div>
-                <div class="col-md-6">
-                    <h4 class="mb-3">Sites à voir à San Pedro</h4>
-                    <ul style="list-style-type: disc;">
-                        <li>Les belles plages</li>
-                        <li>Le rocher des amours (spot photo souvenir)</li>
-                        <li>Le port maritime</li>
-                        <li>La corniche</li>
-                        <li>Embouchure et sa plage (à visiter au coucher du soleil) - ne pas se baigner car présence de requins bouledogue) et balade en pirogue sur la lagune</li>
-                        <li>La lagune digboué</li>
-                        <li>Piscines naturelles (faire attention aux oursins et horaires des marées)</li>
-                        <li>La baie de Taki</li>
-                    </ul>
                 </div>
             </div>
         </div>

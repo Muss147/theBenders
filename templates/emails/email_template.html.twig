@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Nouveau formulaire soumis</title>
+</head>
+<body>
+    <h1>Nouveau formulaire soumis</h1>
+    <p>Bonjour {{ prenom }} {{ nom }},</p>
+    <p>Merci d'avoir soumis le formulaire avec les informations suivantes :</p>
+    <ul>
+        <li>Téléphone : {{ tel }}</li>
+        <li>Email : {{ email }}</li>
+        <li>Nombre de personnes : {{ personnes }}</li>
+        <li>Moyen de transport : {{ transport }}</li>
+    </ul>
+    <p>Participations :</p>
+    <ul>
+        {% for participation in participations %}
+            <li>{{ participation }}</li>
+        {% endfor %}
+    </ul>
+    <p>Dates du séjour : {{ datesSejour }}</p>
+    <p>Merci de votre participation !</p>
+</body>
+</html>
